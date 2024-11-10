@@ -1,9 +1,8 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deep Dive Podcast</title>
+    <title>DeepDive Podcast</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -145,7 +144,7 @@
         </div>
 
         <!-- Radio4Brainport Logo -->
-        <img src="https://www.radio4brainport.org/assets/logo.png" alt="Radio4Brainport Logo" class="radio-logo">
+        <img src="https://www.radio4brainport.org/site2019/wp-content/uploads/2019/07/Logo-Radio4Brainport-320x240.png" alt="Radio4Brainport Logo" class="radio-logo">
 
     </div>
 
