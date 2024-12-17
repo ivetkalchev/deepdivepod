@@ -76,6 +76,7 @@
         a:hover {
             text-decoration: underline;
         }
+
         .contact-btn {
             position: fixed;
             bottom: 20px;
@@ -87,7 +88,19 @@
             background-color: rgba(255, 255, 255, 0.7);  /* Light background */
             padding: 10px;
             border-radius: 5px;
+            z-index: 999; /* Ensure it stays above content */
         }
+
+        @media screen and (max-width: 600px) {
+            .contact-btn {
+                bottom: 10px; /* Adjust the button position for small screens */
+                right: 10px;
+                font-size: 0.8em; /* Slightly smaller font */
+                padding: 8px; /* Adjust padding */
+            }
+        }
+                
+
         .contact-link:hover {
             color: #2d2d7d;  /* Darker color on hover */
             background-color: rgba(255, 255, 255, 0.9);
