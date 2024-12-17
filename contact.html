@@ -3,74 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - DeepDive Podcast</title>
+    <title>Iman Mossavat</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            color: #333;
             background-color: #f9f9f9;
-            color: #333;
-            margin: 0;
+        }
+
+        /* Header Section */
+        .header-box {
+            display: flex;
+            align-items: flex-start; /* Aligns both the image and text to the top */
+            background-color: white; /* White background */
             padding: 20px;
-            text-align: center;
-        }
-        h1 {
-            font-size: 2em;
-            color: #333;
-        }
-        .contact-info p {
-            font-size: 1.2em;
-            color: #666;
-            margin: 10px 0;
-        }
-        a {
-            color: #2d2d7d;
-            font-weight: bold;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .collaborator {
-            margin-top: 30px;
-            padding: 20px;
-            background-color: #e9e9ff;
             border-radius: 8px;
             border: 1px solid #ddd;
         }
-        .collaborator h2 {
-            font-size: 1.5em;
-            color: #2d2d7d;
+
+        .header-box img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-left: 0; /* Ensures no left margin */
         }
-        .collaborator p {
-            font-size: 1em;
+
+        .header-box h1 {
+            margin: 0;
+            font-size: 2.2em;
+            flex: 1;
+            text-align: center;
             color: #333;
         }
+
+        /* Blue Boxes for Links and Collaborator Info */
+        .blue-box {
+            background-color: #e9e9ff; /* Blue background */
+            color: #333;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            text-align: left;
+            padding: 20px;
+        }
+        .blue-box a {
+            color: #2d2d7d; /* blue for contrast */
+            text-decoration: none;
+        }
+        .blue-box a:hover {
+            text-decoration: underline;
+        }
+
+        /* Links Section */
+        .links-box ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .links-box li {
+            margin: 10px 0;
+        }
+
+        /* Collaborator Box */
+        .collaborator-box {
+            text-align: left;
+        }
         .radio-logo {
-            margin-top: 20px;
-            cursor: pointer;
+            display: block;
+            margin: 20px auto; /* Centered logo */
+            width: 150px;
+        }
+
+        /* Back to Home Button */
+        .index-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            font-size: 0.9em;
+            color: #666;
+            text-decoration: none;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .index-btn:hover {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #555;
         }
     </style>
 </head>
 <body>
 
-    <h1>Contact</h1>
+    <!-- Header Section -->
+    <div class="header-box">
+        <img src="assets/portrait.jpg" alt="Iman Mossavat Portrait">
+        <h1>Iman Mossavat</h1>
+    </div>
     
-    <div class="contact-info">
-        <p><a href="about.html">About Me</a></p>
+    <!-- Links Box -->
+    <div class="blue-box links-box">
+        <h2>Links</h2>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/mossavat/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://patents.justia.com/inventor/seyed-iman-mossavat" target="_blank">Patents</a></li>
+            <li><a href="https://scholar.google.nl/citations?user=3wSBfH8AAAAJ&hl=en&authuser=2" target="_blank">Google Scholar</a></li>
+            <li><a href="https://x.com/IMossavat" target="_blank">X (Twitter)</a></li>
+        </ul>
     </div>
 
-    <div class="collaborator">
+    <!-- Collaborator Box -->
+    <div class="blue-box collaborator-box">
         <p>In collaboration with <a href="https://www.radio4brainport.org/" target="_blank">Radio 4 Brainport</a>, the Expat Station!</p>
         <p>Also available on DAB+ and 747 kHz AM in the Brainport region, offering programming tailored for internationals in Eindhoven and beyond.</p>
+        <!-- Centered Logo -->
+        <a href="https://www.radio4brainport.org/" target="_blank">
+            <img src="https://www.radio4brainport.org/site2019/wp-content/uploads/2019/07/Logo-Radio4Brainport-320x240.png" 
+                 alt="Radio4Brainport Logo" class="radio-logo">
+        </a>
     </div>
 
-    <!-- Clickable Radio4Brainport Logo -->
-    <a href="https://www.radio4brainport.org/" target="_blank">
-        <img src="https://www.radio4brainport.org/site2019/wp-content/uploads/2019/07/Logo-Radio4Brainport-320x240.png" 
-             alt="Radio4Brainport Logo" class="radio-logo">
-    </a>
-
-    <p><a href="index.html">Back to Home</a></p>
+    <!-- Back to Home Button -->
+    <a href="index.html" class="index-btn">Back to Home</a>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Iman Mossavat | All Rights Reserved</p>
+    </footer>
 
 </body>
 </html>
