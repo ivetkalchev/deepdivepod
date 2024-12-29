@@ -1,3 +1,11 @@
+---
+layout: post
+title: "My Ongoing Journey with Bayesian Probabilities"
+date: 2024-12-30
+excerpt: "This post discusses probabilistic reasoning and Bayesian probabilities..."
+tags: ["machine learning", "probabilities", "bayesian"]
+---
+
 The introduction to _Data Analysis: A Bayesian Tutorial_ by D.S. Sivia and J. Skilling offers a clear and motivational perspective. It combines philosophical depth with practical insights, making the Bayesian approach seem both intuitive and compelling. Their unapologetically opinionated stance demystifies the field, presenting it not just as a set of tools but as a coherent way of thinking about uncertainty and inference.
 
 The book emphasizes how Bayesian methods are rooted in logical reasoning and align with the way we naturally update our beliefs when faced with new evidence. The authors base their treatment of probability theory on Cox's theorem, which derives the laws of probability for "optimal decision-making under uncertainty." This framework connects deeply with the current debates around the reasoning abilities of machines, especially with the rise of generative AI models like ChatGPT. In my opinion, this discussion makes Sivia's book, along with E.T. Jaynes' work, more relevant than ever.
