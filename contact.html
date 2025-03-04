@@ -102,6 +102,32 @@
             font-size: 0.9em;
             color: #555;
         }
+
+        /* Top links bar */
+        .top-links {
+            font-size: 1.1em;
+            text-align: center; /* Center the links */
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        .top-links a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 10px; /* Space between the links */
+        }
+
+        .top-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* If the separator | needs to be styled */
+        .top-links a:not(:last-child)::after {
+            content: "|";
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
     </style>
 </head>
 <body>
@@ -110,6 +136,11 @@
     <div class="header-box">
         <img src="assets/portrait.jpg" alt="Iman Mossavat Portrait">
         <h1>Iman Mossavat</h1>
+    </div>
+    
+    <!-- Links Bar (at the top) -->
+    <div class="top-links">
+        <a href="https://www.linkedin.com/company/deep-dives-with-iman/" target="_blank">Follow Us On LinkedIn!</a> 
     </div>
 
     <div class="intro-box">
@@ -133,13 +164,17 @@
     <div class="blue-box links-box">
         <h2>Links</h2>
         <ul>
-            <li><a href="https://www.linkedin.com/in/mossavat/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://www.linkedin.com/company/deep-dives-with-iman/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/24/145/145807.png" alt="LinkedIn" style="width: 20px; height: 20px; margin-right: 8px;">
+                Deep Dives with Iman (Company Page)
+            </a></li>
             <li><a href="https://patents.justia.com/inventor/seyed-iman-mossavat" target="_blank">Patents</a></li>
             <li><a href="https://scholar.google.nl/citations?user=3wSBfH8AAAAJ&hl=en&authuser=2" target="_blank">Google Scholar</a></li>
             <li><a href="https://bsky.app/profile/imossavat.bsky.social" target="_blank">Bluesky</a></li>            
             <li><a href="https://x.com/IMossavat" target="_blank">X (Twitter)</a></li>
         </ul>
     </div>
+    
 
     <!-- Collaborator Box -->
     <div class="blue-box collaborator-box">
