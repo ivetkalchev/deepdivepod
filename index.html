@@ -3,420 +3,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DeepDive Podcast</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            background-image: url('https://raw.githubusercontent.com/mossavatFontys/deepdivepod/cee119a959cabe2964621bd1f26778f29ffca0ba/assets/background.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-        }
-        .content {
-            max-width: 800px;
-            position: relative;
-            z-index: 2;
-            background-color: rgba(255, 255, 255, 0.8); /* Add a white background with opacity to ensure content visibility */
-            padding: 20px;
-            border-radius: 8px;
-        }
-
-        h1 {
-            color: #000000;
-            text-align: center;
-            font-size: 3em;
-            margin: 20px 0;
-        }
-
-        .subtitle {
-            font-size: 1.1em;
-            text-align: center;
-            color: #000000;
-        }
-
-        .subsubtitle {
-            font-size: 1em;
-            text-align: center;
-            color: #383737;  /* Lighter color for the subsub title */
-        }
-
-        .episode {
-            background-color: #ffffff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 15px;
-            margin-bottom: 20px;
-            text-align: left;
-        }
-        .episode h2 {
-            color: #2d2d7d;
-        }
-        iframe {
-            width: 100%;
-            height: 80px;
-            border-radius: 8px;
-        }
-        .description {
-            font-size: 1em;
-            margin-top: 10px;
-            color: #666;
-            text-align: left;
-        }
-        a {
-            color: #2d2d7d;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .contact-btn {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            font-size: 0.9em;  /* Smaller font size */
-            color: #666;  /* Milder color */
-            font-weight: normal;  /* Remove bold */
-            text-decoration: none;  /* No underline */
-            background-color: rgba(255, 255, 255, 0.7);  /* Light background */
-            padding: 10px;
-            border-radius: 5px;
-            z-index: 999; /* Ensure it stays above content */
-        }
-
-        @media screen and (max-width: 600px) {
-            .contact-btn {
-                bottom: 10px; /* Adjust the button position for small screens */
-                right: 10px;
-                font-size: 0.8em; /* Slightly smaller font */
-                padding: 8px; /* Adjust padding */
-            }
-        }
-                
-
-        .contact-link:hover {
-            color: #2d2d7d;  /* Darker color on hover */
-            background-color: rgba(255, 255, 255, 0.9);
-        }
-        .radio-logo {
-            display: block;
-            margin: 20px auto;
-            width: 200px;
-            height: auto;
-        }
-
-    </style>
+    <link rel="stylesheet" href="./assets/css/index-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <div class="content">
-        <h1>Deep Dives with Iman</h1>
-        <p class="subtitle">Conversations on humans and machines</p>
-        <p class="subsubtitle">In collaboration with <a href="https://www.radio4brainport.org/" target="_blank">Radio4Brainport</a></p>
-
-
-            <!-- Episode 26 -->
-            <div class="episode">
-            <h2>Episode 26:  Sepp Hochreiter, LSTM, and the Rise of TiRex, The King of Time</h2>
-
-            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/2n0wBzQn4pQ8Hiyn4UGtr5?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
-            <p class="description">The algorithm behind early versions of Siri, Google Translate, and Alexa? It wasn't invented by a tech giant. It was created by a master's student in the 1990s, rejected at first, then left to sleep quietly... until it changed the world. That student was Sepp Hochreiter, the inventor of LSTM, one of the most influential breakthroughs in AI. And now, he's back with TiRex, a time series foundation model that has outperformed others on Hugging Face time series leaderboard. It's fast, efficient, and built in Europe, where Sepp and his team at NXAI are betting on open source, smarter models, and AI that runs at the edge.In this episode, we explore how one of AI's pioneers is reshaping the future with fewer GPUs, smaller models, and a bold vision for European innovation.</p>
-            <p><a href="https://www.linkedin.com/in/sepp-hochreiter-41514846/" target="_blank">LinkedIn</a></p><p><a href="https://www.nx-ai.com/" target="_blank">NXAI</a></p>
-            <p>Tags: Deep Learning, LSTM, Austria, AI, Product, Time, Transformer, Edge, TiRex, Time Series, xlstm, Business, Research</p>
-            </div>
-
-            <!-- Episode 25 -->
-            <div class="episode">
-            <h2>Episode 25: Digital Detectives: The Science of Media Forensics</h2>
-
-            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/7qJvgCAR6TIFowCOX3edZA?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
-            <p class="description">In this episode of Deep Dives with Iman, I speak with Dr. Tina Nikoukhah —applied mathematician, media forensics expert, and Director of Research at GetReal. We talk about how synthetic media is evolving, and how researchers like Tina are working to stay ahead of the curve. Tina shares why building public awareness is just as critical as tech solutions. (In fact, awareness and training are one of the four pillars of GetReal's approach, alongside real-time protection for live communication, media analysis tools, and support for media orgs.) It's a conversation about trust, technology, and how to navigate a digital world where seeing isn't always believing.</p>
-            <p><a href="https://www.linkedin.com/in/tina-nikoukhah/" target="_blank">LinkedIn</a></p><p><a href="https://www.getrealsecurity.com/" target="_blank">GetReal</a></p>
-            <p>Tags: Research, Business, Forensics, France, Trust, Deep Fakes, AI, Media</p>
-            </div>
-
-             <!-- Episode 24 -->
-            <div class="episode">
-            <h2>Episode 24: Perception as Inference with Dr. Hadi Vafaii</h2>
-
-            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/6Qzwm0fajzx7laeWPxneYW?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
-            <p class="description">Can probability theory help explain how the mind works? This is the topic of this episode with Dr. Hadi Vafaii, a postdoctoral scholar at UC Berkeley’s Redwood Center for Theoretical Neuroscience, working in Jacob Yates’s lab. Hadi builds intuition step by step, using simple, relatable examples. He explains a mathematical perspective on how the brain processes information by inferring the unobserved causes behind what we see and hear, combining context with new evidence.</p>
-            <p><a href="https://www.linkedin.com/in/hadi-vafaii/" target="_blank">LinkedIn</a></p>
-            <p>Tags:  Neuroscience, Theoretical, Perception, Academic, Bayesian, Research, USA, Inference, AI</p>
-            </div>
-            <!-- Episode 23 -->
-            <div class="episode">
-            <h2>Episode 23: How Well-Meaning Leaders Can End Up at the Heart of Major Corporate Scandals, with Guido Palazzo, Professor of Business Ethics, EPFL Lausanne</h2>
-
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/6VwKGl0oYzWG4Etrel0heL?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>    
-
-            <p class="description">In this episode, Dr. Guido Palazzo joins me to uncover the hidden dynamics behind corporate scandals. We discuss his latest book, The Dark Pattern, co-authored with Dr. Ulrich Hoffrage, which explores how even well-intentioned leaders can become ethically blind under intense organizational pressures. Through real-world cases from major global firms, Guido reveals how good people can end up doing bad things. He identifies nine recurring conditions that foster cultures where unethical behavior becomes normalized. Guido also shares his insights on how technology and AI can further deepen ethical lapses by adding layers of abstraction and distance.</p>
-            <p><a href="https://www.linkedin.com/in/guidopalazzo-/" target="_blank">LinkedIn</a></p><p><a href="https://guidopalazzo.com/" target="_blank">Website</a></p><p><a href="https://www.amazon.com/Dark-Pattern-Dynamics-Corporate-Scandals/dp/1541705300" target="_blank">Book (amazon)</a></p>
-            <p>Tags: Case Study, Ethics, Business Ethics, Professor, Switzerland, Book, Corporate</p>
-            </div>
-
-            <!-- Episode 22 -->
-            <div class="episode">
-            <h2>Episode 22: The true value of AI lies more in thorough testing and evaluation than in coding or prompting, with Dr. Shea Brown, BABL AI CEO</h2>
-
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/6PljII7USVksdr0FLEWPmt?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
-            <p class="description">I got the opportunity to talk to Dr. Shea Brown, former astrophysics professor, and founder of BABL AI, for a sharp look at AI accountability. Shea shares his journey from studying the cosmos to interrogating AI systems, pointing out how scientific skepticism must carry over into today's tech landscape. At BABL AI, he leads efforts to audit and govern AI to ensure it serves human interests, especially in high-stakes areas like hiring, credit scoring, and public services. With real-world examples and hands-on audit methods, Shea explains how AI systems often fail silently and how risk-based auditing can surface hidden harms. Shea hopes for a future where regulation, education, and responsible inno, education, and responsible innovation work hand in hand for human flourishing.</p>
-            <p><a href="https://www.linkedin.com/in/shea-brown-26050465" target="_blank">LinkedIn</a></p><p><a href="https://babl.ai/" target="_blank">Babl AI</a></p>
-            <p>Tags: Physics, Accountability, Governance, Professor, AI, Testing, Audit, CEO, USA </p>
-            </div>
-
-            <!-- Episode 21 -->
-            <div class="episode">
-            <h2>Episode 21:  AI for School Selection in the Netherlands: Efficient, Fair, or Transparent — Pick Two Out of Three!</h2>
-
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/6zzyqPXWOlkISrZzXaPrYg?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
-            <p class="description">I explore the complex intersection of algorithms and education policy with Mayesha Tasnim and Paul Verhagen of the Civic AI Lab at the University of Amsterdam. In cities like Amsterdam and Eindhoven, school placement is increasingly driven by algorithms. But how fair and transparent are these systems?Together, we unpack how public algorithms shape student futures, revealing the trade-offs between fairness, efficiency, and transparency. From the role of lotteries in Amsterdam's admissions to the challenges of "gaming the system," this episode dives into what it truly means to design equitable technology in public policy. Listeners gain rare insight into how smarter algorithms can improve outcomes, while still risking unintended consequences.</p>
-            <p><a href="https://www.linkedin.com/in/mayeshatasnim/" target="_blank">LinkedIn (Mayesha)</a>
-            <p><a href="https://www.linkedin.com/in/verhagen-paul-j/" target="_blank">LinkedIn (Paul)</a>
-            <p>Tags: Education, Eindhoven, AI, GameTheory, Netherlands, Amsterdam, AIandSociety, CivicAILab, Academic, Social, Political</p>
-        </div>
-
-
-        <!-- Episode 20 -->
-        <div class="episode">
-            <h2>Episode 20:  Where Geometry Meets Mission with Colleen Farrelly</h2>
-
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/0xeyr6zlyrjaycoghKAZRE?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>    
-
-            <p class="description">Colleen Farrelly uses mathematics as a versatile tool across many fields, driven by curiosity and social purpose. Calling herself a “wandering mathematician,” she connects pure math with real-world problems—from epidemic modeling and radiomics to data analysis. Colleen shares her experience modeling to help position resources that limited an Ebola outbreak. She explains how understanding the geometry and topology of medical images helps generative algorithms produce medically plausible data. She also highlights how tools useful in one domain, like finance, can be applied to others such as ecology or marketing. She stresses the importance of critical thinking: questioning and exploring better approaches.</p>
-            <p><a href="https://www.linkedin.com/in/colleenmfarrelly/" target="_blank">LinkedIn</a></p><p><a href="https://www.amazon.com/dp/1718503083/ref=tsm_1_fb_lk" target="_blank">The Shape of Data: Geometry-Based Machine Learning and Data Analysis in R</a></p><p><a href="https://www.amazon.com/dp/1805127896/ref=tsm_1_fb_lk" target="_blank">Modern Graph Theory Algorithms with Python</a></p>
-            <p>Tags: Geometry, Mathematics, AI, USA</p>
-        </div>
-
-
-
-        <!-- Episode 19 -->
-        <div class="episode">
-            <h2>Episode 19: No One Left Behind: Luis Serrano on Making Math a Human Experience</h2>
-
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/4Jd3KGpj84TQ4HU6fBIgW3?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
-            <p class="description">Luis Serrano, founder of Serrano Academy, YouTuber, and author of Grokking Machine Learning, joins Deep Dives with Iman to unpack how we hashtag#teach, hashtag#learn, and hashtag#think about hashtag#mathematics. Luis brings a heartfelt, vulnerable, and deeply thoughtful philosophy to STEM hashtag#education. Luis's philosophy is shaped by his journey from mathematician to machine learning engineer at Google, to AI educator at Udacity and Apple, to quantum researcher at Zapata, and now founder of Serrano Academy.</p>
-            <p><a href="https://serrano.academy/" target="_blank">Serrano Academy</a></p><p><a href="https://www.linkedin.com/in/luisgserrano/" target="_blank">LinkedIn</a></p>
-            <p>Tags: math, education, math education, Serrano Academy, AI, Canada</p>
-        </div>
-
-        <!-- Episode 18 -->
-        <div class="episode">
-            <h2>Episode 18: Embodied Cognition, Dynamical Systems & Attractor Networks in Care Robotics</h2>
-            
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/3w15KtOO6yb51IgTqgRScD?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
-            <p class="description">In this episode of Deep Dives with Iman, I speak with Prof. Dr. Yulia Sandamirskaya, head of the Center for Cognitive Computing in Life Sciences at Zurich University of Applied Sciences. Yulia builds robots that perceive, plan, and act in the real world using data- and energy-efficient neuromorphic computing. She states that we discovered our brain didn’t evolve for abstract tasks, it evolved to move. Even small children show cognitive behaviors grounded in movement. [...] Like when we were little, doing simple addition- ‘seven plus two’ - we imagine seven on a number line and move right two units. We place things in space.</p>
-            <p><a href="https://www.sandamirskaya.eu/" target="_blank">Homepage</a></p><p><a href="https://www.linkedin.com/in/prof-dr-yulia-sandamirskaya-0076553" target="_blank">LinkedIn</a></p>
-            <p>Tags: Robotics, Yulia Sandamirskaya, Dynamical Systems, neuromorphic, Embodied Cognition, Care, AI, Attractor Networks, Switzerland</p>
-        </div>
-
-        
-        <!-- Episode 17 -->
-        <div class="episode">
-            <h2>Episode 17: Safe AI For Children</h2>
-            
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/5rogFCICqrCCMfW1N8mgva?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
-            <p class="description">I had the privilege of speaking with Tara Steele, Founder and Director of the Safe AI for Children Alliance. We discussed the growing concerns around AI’s impact on children, particularly with the rise of grief bots—chatbots designed to simulate deceased people—and the lack of understanding regarding their effects.</p>
-            <p><a href="https://www.safeaiforchildren.org/" target="_blank">Safe AI for Children Alliance</a></p><p><a href="https://www.linkedin.com/in/tara-steele/" target="_blank">LinkedIn</a></p>
-            <p>Tags: Tara Steele, Safe AI for Children Alliance, AI, Children, Grief bots, UK</p>
-        </div>
-
-
-            <!-- Episode 16 -->
-            <div class="episode">
-                <h2>Episode 16: Seeing Atoms, Shaping Futures: Dr. Remco Schoenmakers on Asimov, AI, Science, Purpose and Strategy</h2>
-
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/2CrW0FMUCD9vVCsMP3Dd1O?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>  
-
-            <p class="description">In this episode of Deep Dives with Iman, I am joined by Dr. Remco Schoenmakers, Senior Director and AI Strategy Lead at Thermo Fisher Scientific. Dr. Schoenmakers discusses his journey in AI, from his early days in astrophysics to leading AI strategy for the Electron Microscopy business. He shares insights on how AI is transforming the scientific landscape, emphasizing that it is a tool to enhance, not replace, human expertise. With his vast experience, Dr. Schoenmakers also addresses the growing influence of AI in workplaces, offering perspectives on the role of future generations of scientists.</p>
-                <p><a href="https://www.researchgate.net/profile/Remco-Schoenmakers" target="_blank">Researchgate</a></p><p><a href="https://www.linkedin.com/in/remco-schoenmakers-6961359/" target="_blank">LinkedIn</a></p>
-                <p>Tags: Thermo Fisher Scientific, AI, Electron Microscope, Physics, Eindhoven, Brainport, Science </p>
-            </div>
-
-            <!-- Episode 15 -->
-            <div class="episode">
-            <h2>Episode 15: AI, Art, and the Human Touch: Mei-Li Nieuwland on Creativity in the Age of Machines</h2>
-            
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/3r2nkvUFoayFOk8o6uuzBh?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-    
-            <p class="description">How is AI shaping the future of creativity? Where does human artistry remain irreplaceable? Mei-Li is an incredible illustrator and graphic journalist with a background in AI and cultural anthropology. In our conversation, we explored AI's growing influence on the art industry, its impact on concept and environmental art, and why her niche remains largely unaffected.</p>
-                <p><a href="https://liea.nl" target="_blank">Mei-Li Nieuwland</a></p>
-                <p>Tags: Creativity, Culture, Art, AI</p>
-            </div>
-
-            
-        <!-- Episode 14 -->
-        <div class="episode">
-            <h2>Episode 14: Could Generative AI be Useful for Science and Understanding the World?</h2>
-
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/0AepuuyGwssWmIiAuOXkan?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
-            <p class="description">In this episode, Jakub Tomczak, a leading figure in Generative AI and former Program Chair of NeurIPS 2024, shares his insights on the transformative impact of Generative AI, not just in the field of artificial intelligence but in scientific discovery as well. Jakub explains how this technology is reshaping our understanding of generation processes and its potential to revolutionize various domains. Jakub offers a thought-provoking perspective on AI's societal implications, inviting us to be mindful. For those interested in a deeper dive into his work, Jakub's book, Deep Generative Modeling, is an essential resource on advanced AI models, including diffusion, flow, and energy-based models, GANs, and Variational Autoencoders.</p>
-            <p><a href="https://www.linkedin.com/in/jakub-tomczak-04305314a/" target="_blank">Jakub Tomczak LinkedIn</a></p><p><a href="https://jmtomczak.github.io/" target="_blank">Jakub Tomczak Persoanl Webpage</a></p>
-            <p>Tags: AI, Science, Generative AI, USA</p>
-        </div>
-
-
-        <!-- Episode 13 -->
-        <div class="episode">
-            <h2>Episode 13: "Your Business Focus and Opportunity Is Trustworthiness" Ger Janssen, Philips' AI Ethics and Compliance Lead</h2>
-
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/3hLKJbJKguwWzsewfyEejT?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
-            <p class="description">Together with Ger Janssen, we discuss responsible AI practices, highlighting trustworthiness, fairness, and transparency in AI applications.Ger is Philips' Ethics and Compliance Lead, explores AI’s impact on industries, particularly healthcare. He discusses how AI can enhance patient care while addressing biases and ethical challenges. With AI's rapid rise, it’s crucial to adapt education and regulations to support effective human-AI collaboration. As Janssen underscores, AI isn’t going away—businesses must learn to leverage it responsibly. This episode offers essential insights into AI’s evolving influence on industries and society.</p>
-            <p><a href="https://www.linkedin.com/in/ger-janssen-a510498" target="_blank">LinkedIn</a></p>
-            <p>Tags: human-AI collaboration, responsible AI, fairness, healthcare, Ethics, trustworthiness, regulation, Eindhoven, society, AI, industry</p>
-        </div>
-
-        <!-- Episode 12 -->
-        <div class="episode">
-            <h2>Episode 12: How can nature inspire artificial intelligence research to revolutionize energy efficiency? Dr. Federico Corradi explains.</h2>
-            
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/3DKVRTqByDS4POZmCrnM58?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
-            <p class="description">A brief introduction to neuromorphic computing by Dr. Federico Corradi, Assistant Professor at TU Eindhoven. Specializing in energy-efficient AI inspired by the brain, Dr. Corradi leads the Neuromorphic Edge Computing Systems Lab, exploring how nature's principles can reshape AI to consume less energy. In this episode, Dr. Corradi explains how the brain’s minimal energy use inspires new AI systems, addressing the massive energy demands of large language models. In his line of research, the boundary between hardware and software is increasingly blurred. Designing algorithms and hardware together could transform AI into more sustainable and independent systems, enabling smarter edge devices without cloud reliance.</p>
-            <p><a href="https://www.tue.nl/en/research/researchers/federico-corradi/" target="_blank">University Page</a></p><p><a href="https://www.linkedin.com/in/federico-corradi-19a69a17" target="_blank">LinkedIn</a></p>
-            <p>Tags: AI, Edge, Technology, Eindhoven, University, Innovation, Computing, Brain, Energy, Neuromorphic</p>
-        </div>
-
-        <!-- Episode 11 -->
-        <div class="episode">
-            <h2>Episode 11: Robert Engels: "Agents need the same thing as you and I: they need an idea of intent and purpose of the counterpart or adversary"</h2>
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/0HcECLegRufdTrwKSuuf7P?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
-            <p class="description">Iman Mossavat engages Robert Engels, Head of AI Futures Lab at Capgemini, in a discussion on the role of context and abstraction in AI. With 36 years of experience, Engels examines why current generative AI systems, like GPT-4, excel at tasks yet fail in complex, real-world settings. Robert argues, \“Two things are underperforming in the world of generative AI—abstraction and logical reasoning.\” Robert underscores the need for AI to adopt a world model akin to philosophical reasoning: "Plato and Socrates understood this when they built logics—they looked at the world and tried to grasp its principles." </p>
-            <p><a href="https://www.linkedin.com/in/robertengels/" target="_blank">LinkedIn (Robert Engels)</a></p>
-            <p>Tags: Context, Eindhoven, Innovation, AI, Abstraction, GPT, Capgemini</p>
-        </div>
-
-        <!-- Episode 10 -->
-        <div class="episode">
-            <h2>Episode 10: Artin Entezarjou: "AI vs Doctors: Human Judgement Wins (for time being) in Complex Medical Contexts"</h2>
-
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/0TppO8PGrmA1h888TMJ5WK?utm_source=generator"
-        width="100%" height="352" frameBorder="0" allowfullscreen=""
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
-            <p class="description">Our host Iman Mossavat welcomes Dr. Artin Entezarjou, a board-certified general medicine specialist, to discuss AI's role in healthcare. Dr. Entezarjou highlights AI's progress and challenges in handling complex clinical scenarios. “Humans can outperform AI when questions aren’t multiple choice, especially when psychosocial factors are involved,” he explains. His research comparing GPT-4 to human doctors reveals AI's limitations in understanding real-world medical complexities and patient contexts. “Clinical decisions require more than symptoms; they demand insight into patients’ preferences and circumstances,” he says. Dr. Entezarjou stresses the continued need for human judgment, adding, “We’re still the masters of recognizing when more context is needed, though this is rapidly changing.” He advocates for AI systems that are robust, trustworthy, and intuitive, emphasizing their role in supporting—not replacing—physicians. “AI can excel in specific tasks, but general judgment remains human,” he concludes</p>
-            <p><a href="https://bmjopen.bmj.com/content/14/12/e086148" target="_blank">Study</a></p><p><a href="https://www.linkedin.com/in/artin-entezarjou-330624137/" target="_blank">LinkedIn (Artin Entezarjou)</a></p>
-            <p>Tags: Sweden, Healthcare, Innovation, Health, Clinical, Care, AI, Medicine</p>
-        </div>
-
-        <!-- Episode 9 -->
-        <div class="episode">
-            <h2>Episode 9: Diederik Roijers: "What If We Optimized for Enough, Not More?"</h2>
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/7MdFF5ckblYIPDr4U33ocp?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            <p class="description">Join Iman Mossavat as he speaks with 
-                <a href="https://roijers.info/" target="_blank">Diederik Roijers</a>, senior researcher at the AI Lab at Vrije Universiteit Brussel. Diederik specializes in <strong>Multi-Objective Reinforcement Learning (MORL)</strong>, a framework that shifts focus from optimizing a single outcome to balancing multiple, sometimes competing, objectives. 
-
-                Drawing on the ancient idea of balance—akin to Yin and Yang—Diederik challenges the status quo of “maximizing more.” Instead, he advocates for pursuing outcomes that are <strong>"good enough"</strong>, prioritizing practicality, ethics, and societal benefit over perfection. 
-                
-                💡 Key Insight: How can AI navigate trade-offs like maximizing rewards while minimizing risks? Diederik’s vision emphasizes deliberate choices in AI design, promoting transparency, maintainability, and alignment with societal values. Together, they explore how AI can serve everyone fairly—not just a select few—while balancing innovation and responsibility.
-
-                Tune in for a refreshing perspective on building AI systems that prioritize balance, fairness, and shared benefit.
-            </p>
-            <p>For more about Diederik Roijers:  
-                <a href="https://scholar.google.com/citations?user=oi25V4EAAAAJ" target="_blank">Google Scholar</a>
-            </p>
-        </div>
-        <!-- Episode 8 -->
-        <div class="episode">
-            <h2>Episode 8: Weaving Trustworthy AI with Threads of Reason: The Subtle Genius of Professor Mehdi Dastani</h2>
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/2GCHWC3t8mcAMZ3ynxMMKV?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            <p class="description">Join Iman Mossavat for an enlightening conversation with Professor 
-                <a href="https://www.uu.nl/medewerkers/MMDastani" target="_blank">Mehdi Dastani</a>, Chair of the Intelligent Systems group at Utrecht University. With over 500 scientific contributions, Professor Dastani has spent decades merging computer science and philosophy in a way that challenges and inspires. 
-                His work spans formal logic, reinforcement learning, ethics, and human-centered AI, bringing fresh perspectives to the challenges facing modern technology.
-                
-                Key Insight: Professor Dastani emphasizes the need for a fusion of machine learning, formal reasoning, and domain expertise to create AI systems that are safe, ethical, and aligned with human values. His interdisciplinary approach, drawing from psychology, law, and philosophy, offers innovative solutions to issues like AI bias, accountability, and safety risks. 
-                <li><a href="https://scholar.google.nl/citations?user=rvG4n98AAAAJ" target="_blank">Mehdi Dastani on Google Scholar</a></li>               
-            </p>
-        </div>
-
-        <!-- Episode 7 -->
-        <div class="episode">
-            <h2>Episode 7: Lazy But Brilliant: How LazyDynamics is Set to Redefine Real-Time Decision Making with Reactive AI</h2>
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/5IZWs2vukrUwejIrrF7PK4?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        <p class="description">Join Iman Mossavat for an insightful episode with special guests 
-            <a href="https://www.linkedin.com/in/albertpod/" target="_blank">Albert Podusenko</a> and 
-            <a href="https://www.linkedin.com/in/ismail-senoz/" target="_blank">İsmail Şenöz</a>, as we dive into the innovative world of 
-            <a href="https://lazydynamics.com/" target="_blank">Lazy Dynamics</a>. This cutting-edge company is reshaping how agents process and act on real-time data in unpredictable environments. Their software streamlines the development of intelligent systems capable of navigating uncertainty — whether it's an ambulance optimizing routes or legal tech helping lawyers model strategic uncertainties in complex litigation.
-            
-            At the heart of their approach is <a href="https://rxinfer.ml/" target="_blank">RxInfer</a>, a fast and efficient tool designed to overcome the computational limitations of traditional <strong>probabilistic programming</strong> libraries, enabling real-time decision-making. With a unique <strong> reactive message-passing</strong> system, Lazy Dynamics ensures agents can keep reasoning even if some sensors fail — a true breakthrough for dynamic, high-stakes environments.
-            
-            Discover how collaboration and <strong> open-source </strong> contributions are fueling their success and how these innovations are shaping the future. Tune in for an episode packed with insights into the future of AI and real-time decision-making!
-            
-            For more about the guests:
-            <ul>
-                <li><a href="https://scholar.google.com/citations?user=JHnjtN4AAAAJ" target="_blank">Albert Podusenko on Google Scholar</a></li>
-                <li><a href="https://scholar.google.nl/citations?hl=en&user=t2ZEDP0AAAAJ" target="_blank">İsmail Şenöz on Google Scholar</a></li>
-            </ul>
-            </p>
-        </div>
-
-        <!-- Episode 6 -->
-        <div class="episode">
-            <h2>Episode 6: Is your AI project legally compliant, with Inge Brattinga</h2>
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/1vFZ9ZidZL9vAkRTkLYEsH?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            <p class="description">In this episode, <a href="https://www.vrfadvocaten.nl/blog/team/inge-brattinga/" target="_blank">Inge Brattinga</a>, lawyer at VRF Advocaten and lecturer at Avans University, discusses how AI is reshaping hiring, human-resources (HR), decision-making, and privacy. She highlights the importance of AI literacy, offering practical advice for businesses navigating upcoming regulations.</p>
-        </div>
-
-
-        <!-- Episode 5 -->
-        <div class="episode">
-            <h2>Episode 5: Evolutionary Science and AI with Indre Žliobaitė</h2>
-            <iframe src="https://open.spotify.com/embed/episode/2BzPwHFPBRxmUoMjAaIiYI?utm_source=generator" frameborder="0" allowfullscreen="" loading="lazy"></iframe>
-            <p class="description">Professor <a href="https://www.zliobaite.com/" target="_blank">Indre Žliobaitė</a> explores parallels between evolutionary science and AI, discussing adaptive models, concept drift, and more. She explains how principles of evolution can inform AI, providing insights into dynamics like competition and adaptation.</p>
-        </div>
-
-        <!-- Episode 4 -->
-        <div class="episode">
-            <h2>Episode 4: Legal Challenges of AI with Colette Cuijpers</h2>
-            <iframe src="https://open.spotify.com/embed/episode/1oe9HWEoT6XJvPTrrGNZk3?utm_source=generator" frameborder="0" allowfullscreen="" loading="lazy"></iframe>
-            <p class="description"><a href="https://research.tilburguniversity.edu/en/persons/colette-cuijpers" target="_blank">Colette Cuijpers</a>, Associate Professor at Tilburg Law School, discusses the urgent legal and ethical challenges AI presents, from accountability to bias. This episode highlights the balance between innovation and regulation in a rapidly evolving field.</p>
-        </div>
-
-        <!-- Episode 3 -->
-        <div class="episode">
-            <h2>Episode 3: Causal AI and Intelligent Systems with Alexander Molak</h2>
-            <iframe src="https://open.spotify.com/embed/episode/0xghHS4lo0aW22sI5VVH11?utm_source=generator" frameborder="0" allowfullscreen="" loading="lazy"></iframe>
-            <p class="description"><a href="https://alxndr.io/" target="_blank">Alexander Molak</a>, machine learning researcher, explains why Generative AI lacks true causal understanding. He discusses Causal AI and its potential to improve intelligent systems by moving beyond mere correlation to deeper cause-and-effect insights.</p>
-        </div>
-
-        <!-- Episode 2 -->
-        <div class="episode">
-            <h2>Episode 2: Systems Engineering and AI with Gerrit Muller</h2>
-            <iframe src="https://open.spotify.com/embed/episode/0C0GGgkFuwFlFmZvmqulm4?utm_source=generator" frameborder="0" allowfullscreen="" loading="lazy"></iframe>
-            <p class="description">Gerrit Muller, a systems engineer and professor, discusses the integration of systems engineering and AI, exploring the importance of a balanced approach. He examines common challenges, such as data quality and interpretability, and the complementary role of Model-Based Systems Engineering.</p>
-        </div>
-
-        <!-- Episode 1 -->
-        <div class="episode">
-            <h2>Episode 1: Understanding Power Dynamics in AI with Mahault Albarracin</h2>
-            <iframe src="https://open.spotify.com/embed/episode/3uHMBoorJXPnIZoYvdMrla?utm_source=generator" frameborder="0" allowfullscreen="" loading="lazy"></iframe>
-            <p class="description">Mahault Albarracin, Director of Applied Research and PhD candidate in Computing, discusses how AI often prioritizes objectives set by powerful stakeholders, affecting societal power structures. This episode explores the intersection of technology, ethics, and power in AI design.</p>
-        </div>
-
-        <!-- Radio4Brainport Logo -->
-        <img src="https://www.radio4brainport.org/site2019/wp-content/uploads/2019/07/Logo-Radio4Brainport-320x240.png" alt="Radio4Brainport Logo" class="radio-logo">
-
+    <div class="container">
+        <header>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Episodes</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>  
+            <section class="hero">
+                <div class="hero-text">
+                    <p class="hero-welcome">Welcome to</p>
+                    <h1 class="hero-title">Deep Dives with Iman</h1>
+                    <p class="hero-subtitle">
+                        Exploring the science, tech and societal impact of
+                        artificial intelligence with accessible expert insights.
+                    </p>
+                </div>
+            </section>
+
+            <section class="latest-episode">
+                <div class="episode-heading">
+                    <p class="line1">Dive Into The</p>
+                    <p class="line2">Latest Episode</p>
+                </div>
+                <div class="episode-embed">
+                    <iframe data-testid="embed-iframe"
+                        src="https://open.spotify.com/embed/episode/2n0wBzQn4pQ8Hiyn4UGtr5?utm_source=generator&theme=0&t=0"
+                        width="100%" height="152" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+                    </iframe>
+                </div>
+            </section>
+
+            <section class="radio-section">
+                <img src="./assets/images/Logo-Radio4Brainport.png" alt="Radio 4 Brainport Logo" class="radio-logo">
+                <p>In collaboration with Radio 4 Brainport, the Expat Station!</p>
+            </section>
+        </main>
+
+        <footer>
+            © 2024 Iman Mossavat | All Rights Reserved
+        </footer>
     </div>
-
-    <a href="contact.html" class="contact-btn">Contact</a>
-
 </body>
 </html>

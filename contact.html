@@ -3,199 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iman Mossavat</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            color: #333;
-            background-color: #f9f9f9;
-        }
-
-        /* Header Section */
-        .header-box {
-            display: flex;
-            align-items: flex-start; /* Aligns both the image and text to the top */
-            background-color: white; /* White background */
-            padding: 20px;
-            border-radius: 8px;
-            border: 1px solid #ddd;
-        }
-
-        .header-box img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            margin-left: 0; /* Ensures no left margin */
-        }
-
-        .header-box h1 {
-            margin: 0;
-            font-size: 2.2em;
-            flex: 1;
-            text-align: center;
-            color: #333;
-        }
-
-        /* Blue Boxes for Links and Collaborator Info */
-        .blue-box {
-            background-color: #e9e9ff; /* Blue background */
-            color: #333;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
-            text-align: left;
-            padding: 20px;
-        }
-        .blue-box a {
-            color: #2d2d7d; /* blue for contrast */
-            text-decoration: none;
-        }
-        .blue-box a:hover {
-            text-decoration: underline;
-        }
-
-        /* Links Section */
-        .links-box ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .links-box li {
-            margin: 10px 0;
-        }
-
-        /* Collaborator Box */
-        .collaborator-box {
-            text-align: left;
-        }
-        .radio-logo {
-            display: block;
-            margin: 20px auto; /* Centered logo */
-            width: 150px;
-        }
-
-        /* Back to Home Button */
-        .index-btn {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            font-size: 0.9em;
-            color: #666;
-            text-decoration: none;
-            background-color: rgba(255, 255, 255, 0.7);
-            padding: 10px;
-            border-radius: 5px;
-            border: 1px solid #ddd;
-            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s, color 0.3s;
-        }
-        .index-btn:hover {
-            background-color: #f0f0f0;
-            color: #333;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 30px;
-            font-size: 0.9em;
-            color: #555;
-        }
-
-        /* Top links bar */
-        .top-links {
-            font-size: 1.1em;
-            text-align: center; /* Center the links */
-            margin-top: 10px;
-            margin-bottom: 20px;
-        }
-
-        .top-links a {
-            text-decoration: none;
-            color: #333;
-            margin: 0 10px; /* Space between the links */
-        }
-
-        .top-links a:hover {
-            text-decoration: underline;
-        }
-
-        /* If the separator | needs to be styled */
-        .top-links a:not(:last-child)::after {
-            content: "|";
-            margin-left: 10px;
-            margin-right: 10px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="./assets/css/contact-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;700&display=swap" rel="stylesheet">
+    <title>Contact</title>
 </head>
 <body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Episodes</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <!-- Header Section -->
-    <div class="header-box">
-        <img src="assets/portrait.jpg" alt="Iman Mossavat Portrait">
-        <h1>Iman Mossavat</h1>
+        <main>  
+            <div class="host-section">
+                <img src="./assets/images/portrait.jpg" alt="Iman Mossavat Portrait">
+                <p>Host</p>
+                <h1>Iman Mossavat</h1>
+            </div>
+            
+            <div class="links">
+                <div class="icon-container">
+                    <a href="https://www.linkedin.com/company/deep-dives-with-iman/" target="_blank">
+                    <img src="./assets/images/linkedin-brands-solid.svg" alt="Company's LinkedIn" class="logo">
+                    Company's
+                    </a>
+                    <a href="https://patents.justia.com/inventor/seyed-iman-mossavat" target="_blank">
+                    <img src="./assets/images/book-bookmark-solid-full.svg" alt="Patents" class="logo">
+                    Patents
+                    </a>
+                    <a href="https://scholar.google.nl/citations?user=3wSBfH8AAAAJ&hl=en&authuser=2" target="_blank">
+                    <img src="./assets/images/google-scholar-brands-solid-full.svg" alt="Google Scholar" class="logo">
+                    Google<br>Scholar
+                    </a>
+                    <a href="https://bsky.app/profile/imossavat.bsky.social" target="_blank">
+                    <img src="./assets/images/bluesky-brands-solid-full.svg" alt="Bluesky" class="logo">
+                    Bluesky
+                    </a>
+                    <div class="rss">
+                    <img src="./assets/images/square-rss-solid-full.svg" alt="RSS" class="logo">
+                    RSS
+                    </div>
+                </div>
+            </div>
+     
+            <div class="intro-box">
+                <p>Hello and welcome! I explore how technology, especially artificial intelligence, impacts us 
+                    humans. The podcast has a wide range of guests, from technical to legal experts, scientists, 
+                    and industry leaders. No prior AI knowledge is needed. While discussions are in-depth and 
+                    with experts, we always try to explain everything from the ground up and connect it to 
+                    issues of relevance for today and our future as a society.</p>
+            </div>
+        </main>
+
+        <footer>
+            © 2024 Iman Mossavat | All Rights Reserved
+        </footer>
     </div>
-    
-    <!-- Links Bar (at the top) -->
-    <div class="top-links">
-        <a href="https://www.linkedin.com/company/deep-dives-with-iman/" target="_blank">Follow Us On LinkedIn!</a> 
-    </div>
-
-    <div class="intro-box">
-        <h2>Introduction</h2>
-        <p>Hello! I explore how technology, especially artificial intelligence, impacts us humans. The podcast has a wide range of guests, from technical to legal experts, scientists, and industry leaders. No prior AI knowledge is needed. While discussions are in-depth and with experts, we always try to explain everything from the ground up and connect it to issues of relevance for today and our future as a society.</p>
-
-        <p>Some of the questions we look into are:</p>
-        <ul>
-        <li><em>How is AI shaping the future of creative industry?</em> (Episode 15: Mei-Li Nieuwland, illustrator, graphic journalist, cultural anthropologist)</li>
-        <li><em>Could Generative AI be Useful for Science and Understanding the World?</em> (Episode 14: Jakub Tomczak)</li>
-        <li><em>How can nature inspire artificial intelligence research to revolutionize energy efficiency?</em> (Episode 18: Yulia Sandamirskaya and episode 12 Federico Corradi)</li>
-        <li><em>Why doctors outperform AI in healthcare realistic scenarios?</em> (Episode 10: Artin Entezarjou)</li>
-        <li><em>What if we focused on balance rather than maximization narrow objectives in AI design?</em> (Episode 9: Diederik Roijers)</li>
-        <li><em>How can philosophy, psychology, and law inform AI design?</em> (Episode 8: Mehdi Dastani)</li>
-        <li><em>What does it take to make real-time decisions in high-stakes environments and how to deal with uncertainty?</em> (Episode 7: Albert Podusenko and İsmail Şenöz)</li>
-        <li><em>What are AI's ethical and legal challenges?</em> (Episode 4 with Colette Cuijpers, episode 6 with Inge Brattinga, episode 13 with Ger Janssen, episode 17 with Tara Steele)</li>
-        <li><em>How ideas from macroevolution, extinction, and competition inform our undestanding of AI?</em> (Episodes 5 with Indre Žliobaitė)</li>
-        <li><em>Why can't current AI truly understand cause and effect and how to fix that?</em> (Episode 3: Alexander Molak)</li>
-        </ul>
-        <p>Join me as I discuss innovation, human-centered design, and the future of technology with experts, scientists, and leaders.<p>
-    </div>
-    
-    <!-- Links Box -->
-    <div class="blue-box links-box">
-        <h2>Links</h2>
-        <ul>
-            <li><a href="https://www.linkedin.com/company/deep-dives-with-iman/" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/24/145/145807.png" alt="LinkedIn" style="width: 20px; height: 20px; margin-right: 8px;">
-                Deep Dives with Iman (Company Page)
-            </a></li>
-            <li><a href="https://patents.justia.com/inventor/seyed-iman-mossavat" target="_blank">Patents</a></li>
-            <li><a href="https://scholar.google.nl/citations?user=3wSBfH8AAAAJ&hl=en&authuser=2" target="_blank">Google Scholar</a></li>
-            <li><a href="https://bsky.app/profile/imossavat.bsky.social" target="_blank">Bluesky</a></li>            
-        </ul>
-    </div>
-    
-
-    <!-- Collaborator Box -->
-    <div class="blue-box collaborator-box">
-        <p>In collaboration with <a href="https://www.radio4brainport.org/" target="_blank">Radio 4 Brainport</a>, the Expat Station!</p>
-        <p>Also available on DAB+ and 747 kHz AM in the Brainport region, offering programming tailored for internationals in Eindhoven and beyond.</p>
-        <!-- Centered Logo -->
-        <a href="https://www.radio4brainport.org/" target="_blank">
-            <img src="https://www.radio4brainport.org/site2019/wp-content/uploads/2019/07/Logo-Radio4Brainport-320x240.png" 
-                 alt="Radio4Brainport Logo" class="radio-logo">
-        </a>
-    </div>
-
-    <!-- Back to Home Button -->
-    <a href="index.html" class="index-btn">Back to Home</a>
-    
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Iman Mossavat | All Rights Reserved</p>
-    </footer>
-
 </body>
 </html>
