@@ -1,7 +1,7 @@
 backend:
-  name: git-gateway
-  branch: main
+  name: github
   repo: ivetkalchev/deepdivepod
+  branch: main
 
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
@@ -21,8 +21,9 @@ collections:
       - label: "Tags"
         name: "tags"
         widget: "list"
+        hint: "Add one or more tags for this episode"
         field: 
-          { label: "Tag", name: "tag", widget: "string" }
+            { label: "Tag", name: "tag", widget: "string" }
       - label: "External Links"
         name: "links"
         widget: "list"
