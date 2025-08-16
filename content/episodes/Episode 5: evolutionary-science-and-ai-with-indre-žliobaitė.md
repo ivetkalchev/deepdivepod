@@ -1,0 +1,13 @@
+---
+episode_number: 5
+title: Evolutionary Science and AI with Indre Žliobaitė
+description: Professor Indre Žliobaitė explores parallels between evolutionary
+  science and AI, discussing adaptive models, concept drift, and more. She
+  explains how principles of evolution can inform AI, providing insights into
+  dynamics like competition and adaptation.
+cover: /assets/uploads/screenshot-2025-08-14-164755.png
+spotify: https://open.spotify.com/embed/episode/2BzPwHFPBRxmUoMjAaIiYI?utm_source=generator
+links:
+  - label: Indre Žliobaitė
+    url: https://www.zliobaite.com/
+---
