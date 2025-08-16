@@ -1,15 +1,15 @@
 backend:
-  name: git-gateway
+  name: github
   branch: main
   repo: ivetkalchev/deepdivepod
 
-media_folder: "assets/uploads"
-public_folder: "/assets/uploads"
+media_folder: "assets/eps-uploads"
+public_folder: "./assets/eps-uploads"
 
 collections:
   - name: "episodes"
     label: "Episodes"
-    folder: "content/episodes"
+    folder: "./content/episodes"
     create: true
     slug: "Episode {{fields.episode_number}}: {{slug}}"
     fields:
