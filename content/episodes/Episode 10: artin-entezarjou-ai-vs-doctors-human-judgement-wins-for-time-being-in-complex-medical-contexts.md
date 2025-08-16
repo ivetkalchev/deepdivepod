@@ -18,6 +18,15 @@ description: Our host Iman Mossavat welcomes Dr. Artin Entezarjou, a
   can excel in specific tasks, but general judgment remains human,” he concludes
 cover: /assets/uploads/screenshot-2025-08-14-165500.png
 spotify: https://open.spotify.com/embed/episode/0TppO8PGrmA1h888TMJ5WK?utm_source=generator
+tags:
+  - Sweden
+  - Healthcare
+  - Innovation
+  - Health
+  - Clinical
+  - Care
+  - AI
+  - Medicine
 links:
   - label: Study
     url: https://bmjopen.bmj.com/content/14/12/e086148
