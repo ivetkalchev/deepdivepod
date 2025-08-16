@@ -1,0 +1,21 @@
+---
+episode_number: 8
+title: "Weaving Trustworthy AI with Threads of Reason: The Subtle Genius of
+  Professor Mehdi Dastani"
+description: "Join Iman Mossavat for an enlightening conversation with Professor
+  Mehdi Dastani, Chair of the Intelligent Systems group at Utrecht University.
+  With over 500 scientific contributions, Professor Dastani has spent decades
+  merging computer science and philosophy in a way that challenges and inspires.
+  His work spans formal logic, reinforcement learning, ethics, and
+  human-centered AI, bringing fresh perspectives to the challenges facing modern
+  technology. Key Insight: Professor Dastani emphasizes the need for a fusion of
+  machine learning, formal reasoning, and domain expertise to create AI systems
+  that are safe, ethical, and aligned with human values. His interdisciplinary
+  approach, drawing from psychology, law, and philosophy, offers innovative
+  solutions to issues like AI bias, accountability, and safety risks."
+cover: /assets/uploads/screenshot-2025-08-14-165302.png
+spotify: https://open.spotify.com/embed/episode/2GCHWC3t8mcAMZ3ynxMMKV?utm_source=generator
+links:
+  - label: Mehdi Dastani on Google Scholar
+    url: https://scholar.google.nl/citations?user=rvG4n98AAAAJ
+---
