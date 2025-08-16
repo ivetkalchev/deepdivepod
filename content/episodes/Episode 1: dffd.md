@@ -1,7 +1,10 @@
 ---
 episode_number: 1
-title: dffd
-description: efrfere
-cover: /assets/uploads/screenshot-2025-08-14-165415.png
-spotify: https://open.spotify.com/embed/episode/2n0wBzQn4pQ8Hiyn4UGtr5?utm_source=generator
+title: Understanding Power Dynamics in AI with Mahault Albarracin
+description: Mahault Albarracin, Director of Applied Research and PhD candidate
+  in Computing, discusses how AI often prioritizes objectives set by powerful
+  stakeholders, affecting societal power structures. This episode explores the
+  intersection of technology, ethics, and power in AI design.
+cover: /assets/uploads/screenshot-2025-08-14-163827.png
+spotify: https://open.spotify.com/embed/episode/3uHMBoorJXPnIZoYvdMrla?utm_source=generator
 ---
