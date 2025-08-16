@@ -1,0 +1,28 @@
+---
+episode_number: 7
+title: "Lazy But Brilliant: How LazyDynamics is Set to Redefine Real-Time
+  Decision Making with Reactive AI"
+description: "Join Iman Mossavat for an insightful episode with special guests
+  Albert Podusenko and İsmail Şenöz, as we dive into the innovative world of
+  Lazy Dynamics. This cutting-edge company is reshaping how agents process and
+  act on real-time data in unpredictable environments. Their software
+  streamlines the development of intelligent systems capable of navigating
+  uncertainty — whether it's an ambulance optimizing routes or legal tech
+  helping lawyers model strategic uncertainties in complex litigation. At the
+  heart of their approach is RxInfer, a fast and efficient tool designed to
+  overcome the computational limitations of traditional probabilistic
+  programming libraries, enabling real-time decision-making. With a unique
+  reactive message-passing system, Lazy Dynamics ensures agents can keep
+  reasoning even if some sensors fail — a true breakthrough for dynamic,
+  high-stakes environments. Discover how collaboration and open-source
+  contributions are fueling their success and how these innovations are shaping
+  the future. Tune in for an episode packed with insights into the future of AI
+  and real-time decision-making! For more about the guests:"
+cover: /assets/uploads/screenshot-2025-08-14-165120.png
+spotify: https://open.spotify.com/embed/episode/5IZWs2vukrUwejIrrF7PK4?utm_source=generator
+links:
+  - label: Albert Podusenko on Google Scholar
+    url: https://scholar.google.com/citations?user=JHnjtN4AAAAJ
+  - label: İsmail Şenöz on Google Scholar
+    url: https://scholar.google.nl/citations?hl=en&user=t2ZEDP0AAAAJ
+---
