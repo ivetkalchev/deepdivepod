@@ -9,7 +9,7 @@ public_folder: "/assets/uploads"
 collections:
   - name: "episodes"
     label: "Episodes"
-    folder: "content/episodes"
+    folder: "_episodes"
     create: true
     slug: "Episode {{fields.episode_number}} {{slug}}"
     fields:
@@ -29,3 +29,6 @@ collections:
         fields:
           - { label: "Label", name: "label", widget: "string", hint: "e.g., YouTube, Apple Podcasts" }
           - { label: "URL", name: "url", widget: "string" }
+
+    episodes:
+      output: true
