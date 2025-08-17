@@ -22,14 +22,18 @@ css: index-styles.css
   </div>
 
   {% assign latest = site.episodes | sort: "episode_number" | last %}
-  <div class="episode-embed">
-    {% if latest.spotify %}
-      <iframe src="{{ latest.spotify }}" width="100%" height="152" frameborder="0" allow="encrypted-media"></iframe>
-    {% endif %}
-    <h2>{{ latest.title }}</h2>
-    <p>{{ latest.description }}</p>
-    <a href="{{ latest.url }}">Read more →</a>
-  </div>
+  {% if latest %}
+    <div class="episode-embed">
+      {% if latest.spotify %}
+        <iframe src="{{ latest.spotify }}" width="100%" height="152" frameborder="0" allow="encrypted-media"></iframe>
+      {% endif %}
+      <h2>{{ latest.title }}</h2>
+      <p>{{ latest.description }}</p>
+      <a href="{{ latest.url | relative_url }}">Read more →</a>
+    </div>
+  {% else %}
+    <p>No episodes found yet.</p>
+  {% endif %}
 </section>
 
 <section class="radio-section">
