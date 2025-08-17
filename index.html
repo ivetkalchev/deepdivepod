@@ -1,3 +1,8 @@
+---
+layout: default
+title: Home
+---
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -35,12 +40,15 @@
                     <p class="line1">Dive Into The</p>
                     <p class="line2">Latest Episode</p>
                 </div>
+
+                {% assign latest = site.episodes | sort: "episode_number" | last %}
                 <div class="episode-embed">
-                    <iframe data-testid="embed-iframe"
-                        src="https://open.spotify.com/embed/episode/2n0wBzQn4pQ8Hiyn4UGtr5?utm_source=generator&theme=0&t=0"
-                        width="100%" height="152" frameBorder="0" allowfullscreen=""
-                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
-                    </iframe>
+                    {% if latest.spotify %}
+                    <iframe src="{{ latest.spotify }}" width="100%" height="152" frameborder="0" allow="encrypted-media"></iframe>
+                    {% endif %}
+                    <h2>{{ latest.title }}</h2>
+                    <p>{{ latest.description }}</p>
+                    <a href="{{ latest.url }}">Read more →</a>
                 </div>
             </section>
 
