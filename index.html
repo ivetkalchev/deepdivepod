@@ -3,64 +3,35 @@ layout: default
 title: Home
 ---
 
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DeepDive Podcast</title>
-    <link rel="stylesheet" href="./assets/css/index-styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="container">
-        <header>
-            <nav>
-                <ul class="navbar">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="episodes.html">Episodes</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+<section class="hero">
+  <div class="hero-text">
+    <p class="hero-welcome">Welcome to</p>
+    <h1 class="hero-title">Deep Dives with Iman</h1>
+    <p class="hero-subtitle">
+      Exploring the science, tech and societal impact of
+      artificial intelligence with accessible expert insights.
+    </p>
+  </div>
+</section>
 
-        <main>  
-            <section class="hero">
-                <div class="hero-text">
-                    <p class="hero-welcome">Welcome to</p>
-                    <h1 class="hero-title">Deep Dives with Iman</h1>
-                    <p class="hero-subtitle">
-                        Exploring the science, tech and societal impact of
-                        artificial intelligence with accessible expert insights.
-                    </p>
-                </div>
-            </section>
+<section class="latest-episode">
+  <div class="episode-heading">
+    <p class="line1">Dive Into The</p>
+    <p class="line2">Latest Episode</p>
+  </div>
 
-            <section class="latest-episode">
-                <div class="episode-heading">
-                    <p class="line1">Dive Into The</p>
-                    <p class="line2">Latest Episode</p>
-                </div>
+  {% assign latest = site.episodes | sort: "episode_number" | last %}
+  <div class="episode-embed">
+    {% if latest.spotify %}
+      <iframe src="{{ latest.spotify }}" width="100%" height="152" frameborder="0" allow="encrypted-media"></iframe>
+    {% endif %}
+    <h2>{{ latest.title }}</h2>
+    <p>{{ latest.description }}</p>
+    <a href="{{ latest.url }}">Read more →</a>
+  </div>
+</section>
 
-                {% assign latest = site.episodes | sort: "episode_number" | last %}
-                <div class="episode-embed">
-                    {% if latest.spotify %}
-                    <iframe src="{{ latest.spotify }}" width="100%" height="152" frameborder="0" allow="encrypted-media"></iframe>
-                    {% endif %}
-                    <h2>{{ latest.title }}</h2>
-                    <p>{{ latest.description }}</p>
-                    <a href="{{ latest.url }}">Read more →</a>
-                </div>
-            </section>
-
-            <section class="radio-section">
-                <img src="./assets/images/Logo-Radio4Brainport.png" alt="Radio 4 Brainport Logo" class="radio-logo">
-                <p>In collaboration with Radio 4 Brainport, the Expat Station!</p>
-            </section>
-        </main>
-
-        <footer>
-            © 2024 Iman Mossavat | All Rights Reserved
-        </footer>
-    </div>
-</body>
-</html>
+<section class="radio-section">
+  <img src="./assets/images/Logo-Radio4Brainport.png" alt="Radio 4 Brainport Logo" class="radio-logo">
+  <p>In collaboration with Radio 4 Brainport, the Expat Station!</p>
+</section>
