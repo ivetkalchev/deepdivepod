@@ -13,6 +13,7 @@ collections:
     create: true
     slug: "{{fields.episode_number}}"
     fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "episode" }
       - { label: "Episode Number", name: "episode_number", widget: "number", min: 1, step: 1 }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "text" }
