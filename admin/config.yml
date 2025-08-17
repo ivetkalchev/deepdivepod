@@ -11,7 +11,7 @@ collections:
     label: "Episodes"
     folder: "_episodes"
     create: true
-    slug: "Episode {{fields.episode_number}} {{slug}}"
+    slug: "{{fields.episode_number}}"
     fields:
       - { label: "Episode Number", name: "episode_number", widget: "number", min: 1, step: 1 }
       - { label: "Title", name: "title", widget: "string" }
