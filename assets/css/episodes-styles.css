@@ -1,3 +1,76 @@
 body {
     background: linear-gradient(#011623, #55757B);
 }
+
+.search-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 0px 45px 0px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.search-heading .line1 {
+    font-size: 25px;
+    text-align: center;
+    color: #cccccc;
+    font-weight: 300;
+    margin-bottom: -40px;
+}
+
+.search-heading .line2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.episodes-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+  gap: 2rem; /* space between cards */
+  margin: 2rem 0;
+}
+
+.episode-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.episode-card:hover {
+  transform: translateY(-5px);
+}
+
+.episode-cover {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.episode-card h3 {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.episode-card h2 {
+  margin: 0.5rem 0 1rem;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.episode-card h2 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.episode-card h2 a:hover {
+  color: #0077cc;
+}

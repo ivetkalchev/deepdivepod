@@ -4,10 +4,19 @@ title: Episodes
 css: episodes-styles.css
 ---
 
-<h1>All Episodes</h1>
+<section class="search-section">
+    <div class="search-heading">
+        <p class="line1">Dive Into The</p>
+        <p class="line2">Previous Episodes</p>
+    </div>
+
+    <!-- search bar-->
+
+</section>
 
 <div class="episodes-list">
-    {% for episode in site.episodes %}
+    {% assign sorted_episodes = site.episodes | sort: "episode_number" | reverse %}
+    {% for episode in sorted_episodes %}
         <article class="episode-card">
             <img src="{{ episode.cover }}" alt="{{ episode.title }}" class="episode-cover">
             <h3>Episode {{ episode.episode_number }}</h3>
