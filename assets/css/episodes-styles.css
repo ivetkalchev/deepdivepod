@@ -7,7 +7,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 14px 0px 45px 0px;
+    padding: 40px 0px 45px 0px;
     width: 100%;
     box-sizing: border-box;
 }
@@ -28,49 +28,43 @@ body {
     text-align: center;
 }
 
+/*center section*/
 .episodes-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
-  gap: 2rem; /* space between cards */
-  margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin: 10px 0;
+    width: 800px;
 }
 
 .episode-card {
-  background: #fff;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  text-align: center;
-  transition: transform 0.2s ease-in-out;
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.2s ease-in-out;
 }
 
 .episode-card:hover {
-  transform: translateY(-5px);
+    transform: translateY(-5px);
 }
 
 .episode-cover {
-  width: 100%;
-  height: auto;
-  display: block;
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
 }
 
 .episode-card h3 {
-  margin: 0.5rem 0;
-  font-size: 1rem;
-  color: #555;
+    margin: 0.5rem 0;
+    font-size: 1rem;
 }
 
 .episode-card h2 {
-  margin: 0.5rem 0 1rem;
-  font-size: 1.2rem;
-  color: #222;
+    margin: 0.5rem 0 1rem;
+    font-size: 1.2rem;
 }
 
 .episode-card h2 a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.episode-card h2 a:hover {
-  color: #0077cc;
+    text-decoration: none;
+    color: inherit;
 }
