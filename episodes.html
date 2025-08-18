@@ -28,25 +28,24 @@ css: episodes-styles.css
 </div>
 
 <div class="load-more-container">
-    <button id="load-more-btn">Load More</button>
+    <button id="load-more-btn">DIVE DEEPER</button>
 </div>
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  const episodes = document.querySelectorAll(".episode-card");
-  const loadMoreBtn = document.getElementById("load-more-btn");
+    const episodes = document.querySelectorAll(".episode-card");
+    const loadMoreBtn = document.getElementById("load-more-btn");
 
-  let visibleCount = 9; // show 9 initially
+    let visibleCount = 9;
 
-  // Hide episodes after the first 9
-  episodes.forEach((ep, index) => {
-    if (index >= visibleCount) {
-      ep.style.display = "none";
-    }
-  });
+    episodes.forEach((ep, index) => {
+        if (index >= visibleCount) {
+        ep.style.display = "none";
+        }
+    });
 
-  loadMoreBtn.addEventListener("click", () => {
-    const nextCount = visibleCount + 9;
+    loadMoreBtn.addEventListener("click", () => {
+        const nextCount = visibleCount + 9;
 
     episodes.forEach((ep, index) => {
       if (index < nextCount) {
@@ -56,7 +55,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     visibleCount = nextCount;
 
-    // Hide button if all are visible
     if (visibleCount >= episodes.length) {
       loadMoreBtn.style.display = "none";
     }
