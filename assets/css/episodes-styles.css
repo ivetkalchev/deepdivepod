@@ -50,6 +50,7 @@ body {
 .episode-cover {
     width: 100%;
     aspect-ratio: 1 / 1;
+    height: 270px;
     object-fit: cover;
     display: block;
     border-radius: 10px;
@@ -119,23 +120,14 @@ body {
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
     }
-
-    .episode-cover {
-        height: 220px;
-    }
 }
 
-/* Mobile view (1 column) */
 @media (max-width: 600px) {
     .episodes-list {
         grid-template-columns: 1fr;
         gap: 30px;
     }
-
-    .episode-cover {
-        height: 200px;
-    }
-
+        
     .search-heading .line1 {
         font-size: 20px;
         margin-bottom: -20px;
