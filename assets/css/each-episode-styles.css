@@ -104,18 +104,18 @@ article p {
     }
 
     article h1 {
-        font-size: 24px;
-        margin: 70px 0px 25px 0px;
+        font-size: 30px;
+        margin: 90px 0px 25px 0px;
     }
 
     article .tags {
-        font-size: 14px;
+        font-size: 20px;
         gap: 4px;
-        margin: 0px 0px 20px 0px;
+        margin: 10px 0px 20px 0px;
     }
 
     article p {
-        font-size: 18px;
+        font-size: 20px;
         margin-bottom: 20px;
         padding: 20px 20px 30px 20px;
     }
@@ -127,12 +127,12 @@ article p {
     }
 
     .links-row a {
-        font-size: 18px;
+        font-size: 25px;
     }
 
     .links-row a img {
-        width: 22px;
-        height: 22px;
+        width: 27px;
+        height: 27px;
     }
 
     iframe {
