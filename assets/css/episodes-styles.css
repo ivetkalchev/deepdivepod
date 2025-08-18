@@ -153,14 +153,15 @@ body {
     #search-bar {
         width: 80%;
         font-size: 14px;
+        height: 90%;
     }
 
     .search-heading .line1 {
-    font-size: 15px;
+        font-size: 15px;
     }
 
     .search-heading .line2 {
     font-size: 25px;
-    padding-top: 20px;
+    padding-top: 16px;
     }
 }
