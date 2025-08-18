@@ -77,7 +77,8 @@ footer {
   font-size: 28px;
   color: white;
   cursor: pointer;
-  border-radius: 20px;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 768px) {
@@ -88,12 +89,12 @@ footer {
     gap: 20px;
     background-color: #4e6d73d6;
     position: absolute;
-    top: 50px;
+    top: 60px;
     left: 0;
-    width: 100%;
+    width: 90%;
     padding: 20px 0;
     border-radius: 20px;
-    margin: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 
   .navbar.active {
