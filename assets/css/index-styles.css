@@ -130,7 +130,8 @@
     }
 
     .radio-section {
-    font-size: 15px;
-    padding: 20px;
+    font-size: 16px;
+    padding: 30px;
+    text-align: center;
     }
 }
