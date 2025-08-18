@@ -30,8 +30,12 @@ css: episodes-styles.css
     {% endfor %}
 </div>
 
+<p id="no-results-message">
+  You dived too deep! There is no such an episode yet!
+</p>
+
 <div class="load-more-container">
-    <button id="load-more-btn">DIVE DEEPER</button>
+  <button id="load-more-btn">DIVE DEEPER</button>
 </div>
 
 <script>
@@ -39,6 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const episodes = document.querySelectorAll(".episode-card");
   const loadMoreBtn = document.getElementById("load-more-btn");
   const searchBar = document.getElementById("search-bar");
+  const noResultsMessage = document.getElementById("no-results-message");
 
   let visibleCount = 6;
 
@@ -46,6 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
     episodes.forEach((ep, index) => {
       ep.style.display = index < visibleCount ? "block" : "none";
     });
+    noResultsMessage.style.display = "none";
     if (visibleCount >= episodes.length) {
       loadMoreBtn.style.display = "none";
     } else {
@@ -78,7 +84,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (query.length > 0) {
       loadMoreBtn.style.display = "none";
+      noResultsMessage.style.display = matchCount === 0 ? "block" : "none";
     } else {
+      noResultsMessage.style.display = "none";
       visibleCount = 6;
       showInitialEpisodes();
     }
