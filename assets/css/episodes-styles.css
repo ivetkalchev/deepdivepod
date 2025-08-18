@@ -11,6 +11,7 @@ body {
     margin-top: 80px;
     width: 100%;
     box-sizing: border-box;
+    flex: 1; /* makes main section expand and pushes footer down */
 }
 
 .search-heading .line1 {
@@ -32,9 +33,11 @@ body {
 .episodes-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 60px;
+    gap: 40px;
     margin: 10px auto;
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 20px;
 }
 
 .episode-card {
@@ -49,10 +52,10 @@ body {
 
 .episode-cover {
     width: 100%;
+    height: auto;
+    max-width: 100%;
     aspect-ratio: 1 / 1;
-    height: 270px;
     object-fit: cover;
-    display: block;
     border-radius: 10px;
 }
 
@@ -103,8 +106,7 @@ body {
 #search-bar {
     width: 100%;
     max-width: 600px;
-    margin: 20px auto;
-    margin-bottom: 30px;
+    margin: 20px auto 30px auto;
     display: block;
     padding: 12px 16px;
     font-size: 16px;
@@ -112,39 +114,38 @@ body {
     border: 1px solid #ccc;
     outline: none;
     transition: border 0.3s ease;
-    color: #605E5E
+    color: #605E5E;
 }
 
-@media (max-width: 992px) {
+/* --- Responsive Fixes --- */
+
+/* Tablets */
+@media (max-width: 1024px) {
     .episodes-list {
         grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
+        gap: 30px;
+        max-width: 700px;
     }
 }
 
+/* Mobile */
 @media (max-width: 600px) {
     .episodes-list {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-        
-    .search-heading .line1 {
-        font-size: 20px;
-        margin-bottom: -20px;
+        grid-template-columns: repeat(2, 1fr); /* keep 2 per row */
+        gap: 20px;
+        max-width: 100%;
     }
 
-    .search-heading .line2 {
-        font-size: 28px;
-        margin-bottom: 15px;
+    .episode-card h2 {
+        font-size: 16px;
     }
 
-    #search-bar {
-        font-size: 14px;
-        padding: 10px 14px;
+    .episode-card h3 {
+        font-size: 13px;
     }
 
     #load-more-btn {
-        padding: 10px 40px;
-        font-size: 18px;
+        font-size: 16px;
+        padding: 8px 50px;
     }
 }

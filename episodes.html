@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const loadMoreBtn = document.getElementById("load-more-btn");
   const searchBar = document.getElementById("search-bar");
 
-  let visibleCount = 9;
+  let visibleCount = 6;
 
   function showInitialEpisodes() {
     episodes.forEach((ep, index) => {
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
   showInitialEpisodes();
 
   loadMoreBtn.addEventListener("click", () => {
-    visibleCount += 9;
+    visibleCount += 6;
     showInitialEpisodes();
   });
 
@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (query.length > 0) {
       loadMoreBtn.style.display = "none";
     } else {
-      visibleCount = 9;
+      visibleCount = 6;
       showInitialEpisodes();
     }
   });
