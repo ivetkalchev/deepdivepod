@@ -9,14 +9,6 @@ article {
     overflow: hidden;
 }
 
-article h3 {
-    font-size: 18px;
-    font-weight: 300;
-    color: #CCCCCC;
-    text-align: center;
-    margin: 60px 0px 10px 0px;
-}
-
 article h1 {
     font-size: 36px;
     margin-bottom: 20px;
@@ -55,6 +47,7 @@ article p {
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: -10px;
 }
 
 .links-row a {
@@ -65,7 +58,6 @@ article p {
     align-items: center;
     gap: 6px;
     font-size: 17px;
-    margin-bottom: -10px;
     transition: transform 0.2s ease, color 0.2s ease;
 }
 
