@@ -40,13 +40,14 @@ body {
 
 .icon-container {
     display: flex;
-    gap: 50px;
+    flex-wrap: wrap;         
+    justify-content: center;
+    gap: 40px;
     background-color: #f0f0f0;
     border-radius: 80px;
-    padding: 15px 60px;
+    padding: 15px 40px;
     box-shadow: 2px 2px 4px #0000003a;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .icon-container a,
@@ -62,7 +63,8 @@ body {
     user-select: none;
     text-align: center;
     transition: transform 0.3s;
-    width: 80px;
+    flex: 1 1 100px;
+    max-width: 120px;
 }
 
 .icon-container a:hover,
@@ -103,14 +105,15 @@ body {
 
     .icon-container {
         gap: 25px;
-        padding: 15px 25px;
-        border-radius: 30px;
+        padding: 20px;
+        border-radius: 50px;
     }
 
     .icon-container a,
     .icon-container .rss {
         font-size: 13px;
-        width: 70px;
+        flex: 1 1 80px;
+        max-width: 100px;
     }
 
     .icon-container .logo {
@@ -121,18 +124,5 @@ body {
     .intro-box {
         font-size: 17px;
     }
-}
 
-@media (max-width: 480px) {
-    .icon-container {
-        flex-direction: column;
-        padding: 20px;
-        gap: 15px;
-    }
-
-    .icon-container a,
-    .icon-container .rss {
-        width: 100%;
-        font-size: 14px;
-    }
 }
