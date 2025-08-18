@@ -9,15 +9,14 @@ article {
     overflow: hidden;
 }
 
-/* Episode number */
 article h3 {
     font-size: 18px;
     font-weight: 300;
     color: #CCCCCC;
     text-align: center;
+    margin: 40px 0px 20px 0px;
 }
 
-/* Episode title with gradient text */
 article h1 {
     font-size: 36px;
     margin-bottom: 20px;
@@ -25,37 +24,46 @@ article h1 {
     color: #FFFFFF;
     position: relative;
     z-index: 1;
+    text-align: center;
 }
 
-/* Tags with hover glow */
-article .tags h2 {
+article .tags {
     display: inline-block;
     padding: 6px 18px;
-    margin: 5px 5px 5px 0;
+    margin: 15px 0px 15px 0;
     border-radius: 50px;
     font-size: 14px;
     color: #CCCCCC;
-    font-weight: 500;
+    font-weight: 300;
     cursor: default;
     text-align: center;
 }
 
-article iframe {
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-}
-
 article p {
-    font-size: 18px;
+    font-size: 15px;
     margin-bottom: 30px;
     color: #E6E6E6;
     text-align: justify;
 }
 
-article ul li a {
+.links-row {
+    display: flex;
+    gap: 20px; /* space between links */
+    flex-wrap: wrap; /* optional, allows wrapping on small screens */
+    justify-content: center; /* optional, center the row */
+}
+
+.links-row a {
     color: #CCCCCC;
     text-decoration: none;
     font-weight: 500;
-    position: relative;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* space between image and text */
+}
+
+.links-row a img {
+    width: 16px; /* adjust as needed */
+    height: 16px; /* adjust as needed */
 }
