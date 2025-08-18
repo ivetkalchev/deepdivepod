@@ -3,13 +3,14 @@ body {
 }
 
 .host-section {
-    margin: 110px 0px 0px 0px;
+    margin: 110px 0 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-weight: 300; 
     font-size: 20px;
+    text-align: center;
 }
 
 .host-section img {
@@ -34,6 +35,7 @@ body {
 .links {
     display: flex;
     justify-content: center;
+    margin-top: 25px;
 }
 
 .icon-container {
@@ -41,9 +43,10 @@ body {
     gap: 50px;
     background-color: #f0f0f0;
     border-radius: 80px;
-    padding: 15px 60px 15px 60px;
+    padding: 15px 60px;
     box-shadow: 2px 2px 4px #0000003a;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .icon-container a,
@@ -59,6 +62,7 @@ body {
     user-select: none;
     text-align: center;
     transition: transform 0.3s;
+    width: 80px;
 }
 
 .icon-container a:hover,
@@ -76,8 +80,59 @@ body {
 .intro-box {
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px 0px 30px 0px;
+    padding: 20px 20px 30px 20px;
     font-weight: 300;
     font-size: 20px;
     text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .host-section {
+        margin-top: 60px;
+        font-size: 18px;
+    }
+
+    .host-section img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .host-section h1 {
+        font-size: 24px;
+    }
+
+    .icon-container {
+        gap: 25px;
+        padding: 15px 25px;
+        border-radius: 30px;
+    }
+
+    .icon-container a,
+    .icon-container .rss {
+        font-size: 13px;
+        width: 70px;
+    }
+
+    .icon-container .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .intro-box {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 480px) {
+    .icon-container {
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .icon-container a,
+    .icon-container .rss {
+        width: 100%;
+        font-size: 14px;
+    }
 }
