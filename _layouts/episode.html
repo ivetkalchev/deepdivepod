@@ -1,9 +1,11 @@
 ---
 layout: default
+title: Episode {{ page.episode_number }} 
+css: episodes-style.css
 ---
 
 <article>
-  <h1>{{ page.title }}</h1>
+  <h1>Episode {{ page.episode_number }}: {{ page.title }}</h1>
   <p>{{ page.description }}</p>
 
   <img src="{{ page.cover }}" alt="{{ page.title }}">
