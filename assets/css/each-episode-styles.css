@@ -11,7 +11,7 @@ article {
 
 article h1 {
     font-size: 36px;
-    margin-bottom: 20px;
+    margin: 40px 0px 20px 0px;
     font-weight: 700;
     color: #FFFFFF;
     position: relative;
@@ -47,7 +47,6 @@ article p {
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: -10px;
 }
 
 .links-row a {
