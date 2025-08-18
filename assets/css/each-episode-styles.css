@@ -7,7 +7,7 @@ article {
     margin: 50px auto;
     position: relative;
     overflow: hidden;
-    padding: 0 20px; /* add safe padding for small screens */
+    padding: 0 30px;
 }
 
 article h1 {
@@ -77,21 +77,18 @@ article p {
     transform: scale(1.06);
 }
 
-/* --- Responsive Fixes --- */
-
-/* Tablets */
 @media (max-width: 1024px) {
     article h1 {
-        font-size: 30px;
-        margin: 60px 0 15px 0;
+        font-size: 40px;
+        margin: 100px 0px 40px 0px;
     }
 
     article p {
-        font-size: 17px;
+        font-size: 18px;
     }
 
     .links-row a {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .links-row a img {
@@ -100,10 +97,9 @@ article p {
     }
 }
 
-/* Mobile */
 @media (max-width: 600px) {
     article {
-        margin: 30px auto;
+        margin: 40px auto;
         padding: 0 15px;
     }
 
@@ -118,12 +114,12 @@ article p {
     }
 
     article p {
-        font-size: 15px;
+        font-size: 18px;
         margin-bottom: 20px;
     }
 
     .links-row {
-        flex-direction: column; /* stack links */
+        flex-direction: column;
         align-items: center;
         gap: 12px;
     }
@@ -135,5 +131,10 @@ article p {
     .links-row a img {
         width: 22px;
         height: 22px;
+    }
+
+    iframe {
+        width: 95%;
+        height: 120px;
     }
 }
