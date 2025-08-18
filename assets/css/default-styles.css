@@ -72,11 +72,12 @@ footer {
 
 .menu-toggle {
   display: none;
-  background: none;
+  background: #4E6D73;
   border: none;
   font-size: 28px;
   color: white;
   cursor: pointer;
+  border-radius: 20px;
 }
 
 @media (max-width: 768px) {
@@ -85,14 +86,14 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    background-color: #4e6d7361;
+    background-color: #4e6d73d6;
     position: absolute;
-    top: 60px;
+    top: 50px;
     left: 0;
     width: 100%;
     padding: 20px 0;
     border-radius: 20px;
-    margin: 20px;
+    margin: 2px;
   }
 
   .navbar.active {
