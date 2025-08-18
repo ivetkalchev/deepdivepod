@@ -40,11 +40,11 @@ body {
 .episode-card {
     overflow: hidden;
     text-align: left;
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.3s ease;
 }
 
 .episode-card:hover {
-    transform: translateY(-5px);
+    transform: scale(1.02);
 }
 
 .episode-cover {
@@ -60,7 +60,6 @@ body {
     font-size: 15px;
     font-weight: 300;
     color: #ffffff;
-    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.248);
 }
 
 .episode-card h2 {
@@ -68,7 +67,7 @@ body {
     font-size: 19px;
     color: #ffffff;
     font-weight: 600;
-    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.248);
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
 }
 
 .episode-card a {
@@ -92,11 +91,10 @@ body {
     transition: background 0.3s ease, transform 0.3s ease; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     color: #ffffff;
-    font-weight: 550;
+    font-weight: 600;
 }
 
 #load-more-btn:hover {
     background: #031822;
-    font-weight: 600;
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
