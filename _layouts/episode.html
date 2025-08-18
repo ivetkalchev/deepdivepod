@@ -27,7 +27,7 @@ css: each-episode-styles.css
   <div class="links-row">
     {% for link in page.links %}
       <a href="{{ link.url }}" target="_blank">
-        <img src="../assets/images/link-solid-full.svg" alt="link icon">
+          <img src="{{ '/assets/images/link-solid-full.svg' | relative_url }}" alt="link icon">
         {{ link.label }}
       </a>
     {% endfor %}
