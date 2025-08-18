@@ -1,31 +1,28 @@
 ---
 layout: default
 title: Episodes
+css: all-episodes-styles.css
 ---
 
-        <h1>All Episodes</h1>
+<h1>All Episodes</h1>
 
-        <div class="episodes-list">
-        {% for episode in site.episodes %}
-            <article class="episode-card">
-                <h2><a href="{{ episode.url }}">{{ episode.title }}</a></h2>
-                <p>{{ episode.description }}</p>
+<div class="episodes-list">
+    {% for episode in site.episodes %}
+        <article class="episode-card">
+        <h2><a href="{{ episode.url }}">{{ episode.title }}</a></h2>
+        <p>{{ episode.description }}</p>
 
-                {% if episode.cover %}
-                    <img src="{{ episode.cover }}" alt="{{ episode.title }}" class="episode-cover">
-                {% endif %}
+        {% if episode.cover %}
+            <img src="{{ episode.cover }}" alt="{{ episode.title }}" class="episode-cover">
+        {% endif %}
 
-                {% if episode.spotify %}
-                    <iframe src="{{ episode.spotify }}" width="100%" height="152" frameborder="0" allow="encrypted-media"></iframe>
-                {% endif %}
-
-                {% if episode.links %}
-                    <ul class="episode-links">
-                    {% for link in episode.links %}
-                        <li><a href="{{ link.url }}" target="_blank">{{ link.label }}</a></li>
-                    {% endfor %}
-                    </ul>
-                {% endif %}
-            </article>
-        {% endfor %}
-        </div>
+        {% if episode.links %}
+            <ul class="episode-links">
+            {% for link in episode.links %}
+                li><a href="{{ link.url }}" target="_blank">{{ link.label }}</a></li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </article>
+    {% endfor %}
+</div>
