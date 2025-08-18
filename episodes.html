@@ -11,13 +11,17 @@ css: episodes-styles.css
     </div>
 
     <!-- search bar-->
-
+    <input 
+            type="text" 
+            id="search-bar" 
+            placeholder="Search episodes by title or tags..."
+        >
 </section>
 
 <div class="episodes-list" id="episodes-list">
     {% assign sorted_episodes = site.episodes | sort: "episode_number" | reverse %}
     {% for episode in sorted_episodes %}
-        <article class="episode-card">
+        <article class="episode-card" data-title="{{ episode.title | downcase }}" data-tags="{{ episode.tags | join: ' ' | downcase }}">
             <a href="{{ episode.url }}">
                 <img src="{{ episode.cover }}" alt="{{ episode.title }}" class="episode-cover">
                 <h3>Episode {{ episode.episode_number }}</h3>
@@ -33,30 +37,51 @@ css: episodes-styles.css
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-    const episodes = document.querySelectorAll(".episode-card");
-    const loadMoreBtn = document.getElementById("load-more-btn");
+  const episodes = document.querySelectorAll(".episode-card");
+  const loadMoreBtn = document.getElementById("load-more-btn");
+  const searchBar = document.getElementById("search-bar");
 
-    let visibleCount = 9;
+  let visibleCount = 9;
 
+  function showInitialEpisodes() {
     episodes.forEach((ep, index) => {
-        if (index >= visibleCount) {
-        ep.style.display = "none";
-        }
+      ep.style.display = index < visibleCount ? "block" : "none";
     });
+    if (visibleCount >= episodes.length) {
+      loadMoreBtn.style.display = "none";
+    } else {
+      loadMoreBtn.style.display = "inline-block";
+    }
+  }
 
-    loadMoreBtn.addEventListener("click", () => {
-        const nextCount = visibleCount + 9;
+  showInitialEpisodes();
 
-    episodes.forEach((ep, index) => {
-      if (index < nextCount) {
+  loadMoreBtn.addEventListener("click", () => {
+    visibleCount += 9;
+    showInitialEpisodes();
+  });
+
+  searchBar.addEventListener("input", function () {
+    const query = this.value.toLowerCase().trim();
+    let matchCount = 0;
+
+    episodes.forEach(ep => {
+      const title = ep.dataset.title;
+      const tags = ep.dataset.tags;
+
+      if (title.includes(query) || tags.includes(query)) {
         ep.style.display = "block";
+        matchCount++;
+      } else {
+        ep.style.display = "none";
       }
     });
 
-    visibleCount = nextCount;
-
-    if (visibleCount >= episodes.length) {
+    if (query.length > 0) {
       loadMoreBtn.style.display = "none";
+    } else {
+      visibleCount = 9;
+      showInitialEpisodes();
     }
   });
 });
