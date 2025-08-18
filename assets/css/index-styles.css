@@ -91,16 +91,16 @@
 
 @media (max-width: 768px) {
   .hero {
-    align-items: center;   /* vertically align better on smaller screens */
+    align-items: center;
     justify-content: center;
-    text-align: center;    /* center text */
-    padding: 40px 20px;
+    text-align: center;
+    padding: 20px 20px 40px 0px;
   }
 
   .hero-text {
-    margin-left: 0;        /* reset desktop negative margin */
-    padding-top: 100px;    /* less top padding */
-    max-width: 90%;        /* make it fluid */
+    margin-left: 0;
+    padding-top: 100px;
+    max-width: 90%;
   }
 
   .hero-welcome {
@@ -108,11 +108,11 @@
   }
 
   .hero-title {
-    font-size: 32px;
+    font-size: 28px;
     margin: 10px 0;
   }
 
   .hero-subtitle {
-    font-size: 18px;
+    font-size: 15px;
   }
 }
