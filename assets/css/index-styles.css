@@ -109,7 +109,7 @@
 
   .hero-title {
     font-size: 30px;
-    margin: 5px 0;
+    padding: 10px 0px 10px 0px
   }
 
   .hero-subtitle {
@@ -125,7 +125,12 @@
     font-size: 35px;
     }
 
+    .episode-embed {
+    width: 95%;
+    }
+
     .radio-section {
     font-size: 15px;
-}
+    padding: 20px;
+    }
 }
