@@ -105,18 +105,19 @@ article p {
 
     article h1 {
         font-size: 24px;
-        margin: 40px 0 15px 0;
+        margin: 70px 0px 25px 0px;
     }
 
     article .tags {
         font-size: 14px;
         gap: 4px;
+        margin: 0px 0px 20px 0px;
     }
 
     article p {
         font-size: 18px;
         margin-bottom: 20px;
-        padding: 30px;
+        padding: 30px 20px 30px 20px;
     }
 
     .links-row {
@@ -135,6 +136,7 @@ article p {
     }
 
     iframe {
-        width: 95%;
+        width: 90%;
+        margin: 10px auto;
     }
 }
