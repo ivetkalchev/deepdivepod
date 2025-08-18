@@ -107,6 +107,7 @@ body {
         gap: 30px;
         padding: 15px 30px;
         border-radius: 40px;
+        margin: 15px auto;
     }
 
     .icon-container a,
