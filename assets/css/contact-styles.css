@@ -40,12 +40,12 @@ body {
 
 .icon-container {
     display: flex;
-    flex-wrap: wrap;         
+    flex-wrap: wrap;       
     justify-content: center;
-    gap: 40px;
+    gap: 50px;
     background-color: #f0f0f0;
     border-radius: 80px;
-    padding: 15px 40px;
+    padding: 15px 60px;
     box-shadow: 2px 2px 4px #0000003a;
     align-items: center;
 }
@@ -63,7 +63,7 @@ body {
     user-select: none;
     text-align: center;
     transition: transform 0.3s;
-    flex: 1 1 100px;
+    flex: 1 1 120px; 
     max-width: 120px;
 }
 
@@ -90,7 +90,7 @@ body {
 
 @media (max-width: 768px) {
     .host-section {
-        margin-top: 60px;
+        margin-top: 100px;
         font-size: 18px;
     }
 
@@ -104,16 +104,16 @@ body {
     }
 
     .icon-container {
-        gap: 25px;
-        padding: 20px;
-        border-radius: 50px;
+        gap: 30px;
+        padding: 20px 30px;
+        border-radius: 40px;
     }
 
     .icon-container a,
     .icon-container .rss {
-        font-size: 13px;
-        flex: 1 1 80px;
+        flex: 1 1 100px;
         max-width: 100px;
+        font-size: 14px;
     }
 
     .icon-container .logo {
@@ -125,4 +125,22 @@ body {
         font-size: 17px;
     }
 
+@media (max-width: 480px) {
+    .icon-container {
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .icon-container a,
+    .icon-container .rss {
+        flex: 1 1 80px;
+        max-width: 90px;
+        font-size: 13px;
+    }
+
+    .icon-container .logo {
+        width: 35px;
+        height: 35px;
+    }
+}
 }
