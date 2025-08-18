@@ -90,48 +90,48 @@
 }
 
 @media (max-width: 768px) {
-  .hero {
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 0px 20px 40px 0px;
-  }
+    .hero {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0px 20px 40px 0px;
+    }
 
-  .hero-text {
-    margin-left: 0;
-    padding-top: 100px;
-    max-width: 90%;
-  }
+    .hero-text {
+        margin-left: 0;
+        padding-top: 100px;
+        max-width: 90%;
+    }
 
-  .hero-welcome {
-    font-size: 22px;
-  }
+    .hero-welcome {
+        font-size: 22px;
+    }
 
-  .hero-title {
-    font-size: 30px;
-    padding: 10px 0px 10px 0px
-  }
+    .hero-title {
+        font-size: 30px;
+        padding: 10px 0px 10px 0px
+    }
 
-  .hero-subtitle {
-    font-size: 15px;
-  }
+    .hero-subtitle {
+        font-size: 15px;
+    }
 
-  .episode-heading .line1 {
-    font-size: 20px;
-    text-align: center;
+    .episode-heading .line1 {
+        font-size: 20px;
+        text-align: center;
     }
 
     .episode-heading .line2 {
-    font-size: 35px;
+        font-size: 35px;
     }
 
     .episode-embed {
-    width: 95%;
+        width: 95%;
     }
 
     .radio-section {
-    font-size: 16px;
-    padding: 30px;
-    text-align: center;
+        font-size: 16px;
+        padding: 30px;
+        text-align: center;
     }
 }

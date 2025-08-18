@@ -38,7 +38,7 @@ body {
 
 .icon-container {
     display: flex;
-    flex-wrap: wrap; /* allows wrapping */
+    flex-wrap: wrap;
     gap: 50px;
     background-color: #f0f0f0;
     border-radius: 80px;
