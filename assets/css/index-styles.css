@@ -109,9 +109,23 @@
 
   .hero-title {
     font-size: 30px;
+    margin: 5px 0;
   }
 
   .hero-subtitle {
     font-size: 15px;
   }
+
+  .episode-heading .line1 {
+    font-size: 20px;
+    text-align: center;
+    }
+
+    .episode-heading .line2 {
+    font-size: 35px;
+    }
+
+    .radio-section {
+    font-size: 15px;
+}
 }
