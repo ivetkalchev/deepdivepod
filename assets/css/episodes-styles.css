@@ -49,7 +49,7 @@ body {
 
 .episode-cover {
     width: 100%;
-    height: 270px;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
     display: block;
     border-radius: 10px;
@@ -114,7 +114,6 @@ body {
     color: #605E5E
 }
 
-/* Tablet view (2 columns) */
 @media (max-width: 992px) {
     .episodes-list {
         grid-template-columns: repeat(2, 1fr);
