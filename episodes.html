@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Episodes
-css: all-episodes-styles.css
+css: episodes-styles.css
 ---
 
 <h1>All Episodes</h1>
@@ -9,20 +9,9 @@ css: all-episodes-styles.css
 <div class="episodes-list">
     {% for episode in site.episodes %}
         <article class="episode-card">
-        <h2><a href="{{ episode.url }}">{{ episode.title }}</a></h2>
-        <p>{{ episode.description }}</p>
-
-        {% if episode.cover %}
+            <h3>"{{ episode.episode_number }}"</h3>
+            <h2><a href="{{ episode.url }}">{{ episode.title }}</a></h2>
             <img src="{{ episode.cover }}" alt="{{ episode.title }}" class="episode-cover">
-        {% endif %}
-
-        {% if episode.links %}
-            <ul class="episode-links">
-            {% for link in episode.links %}
-                li><a href="{{ link.url }}" target="_blank">{{ link.label }}</a></li>
-                {% endfor %}
-            </ul>
-            {% endif %}
         </article>
     {% endfor %}
 </div>
