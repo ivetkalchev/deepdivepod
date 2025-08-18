@@ -11,18 +11,55 @@ css: episodes-styles.css
     </div>
 
     <!-- search bar-->
-     
+
 </section>
 
-<div class="episodes-list">
+<div class="episodes-list" id="episodes-list">
     {% assign sorted_episodes = site.episodes | sort: "episode_number" | reverse %}
     {% for episode in sorted_episodes %}
         <article class="episode-card">
             <a href="{{ episode.url }}">
                 <img src="{{ episode.cover }}" alt="{{ episode.title }}" class="episode-cover">
                 <h3>Episode {{ episode.episode_number }}</h3>
-                <h2><a href="{{ episode.url }}">{{ episode.title }}</h2>
+                <h2>{{ episode.title }}</h2>
             </a>
         </article>
     {% endfor %}
 </div>
+
+<div class="load-more-container">
+    <button id="load-more-btn">Load More</button>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const episodes = document.querySelectorAll(".episode-card");
+  const loadMoreBtn = document.getElementById("load-more-btn");
+
+  let visibleCount = 9; // show 9 initially
+
+  // Hide episodes after the first 9
+  episodes.forEach((ep, index) => {
+    if (index >= visibleCount) {
+      ep.style.display = "none";
+    }
+  });
+
+  loadMoreBtn.addEventListener("click", () => {
+    const nextCount = visibleCount + 9;
+
+    episodes.forEach((ep, index) => {
+      if (index < nextCount) {
+        ep.style.display = "block";
+      }
+    });
+
+    visibleCount = nextCount;
+
+    // Hide button if all are visible
+    if (visibleCount >= episodes.length) {
+      loadMoreBtn.style.display = "none";
+    }
+  });
+});
+</script>
