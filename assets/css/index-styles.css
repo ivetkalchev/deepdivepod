@@ -94,7 +94,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 20px 20px 40px 0px;
+    padding: 0px 20px 40px 0px;
   }
 
   .hero-text {
@@ -108,8 +108,7 @@
   }
 
   .hero-title {
-    font-size: 28px;
-    margin: 10px 0;
+    font-size: 30px;
   }
 
   .hero-subtitle {
