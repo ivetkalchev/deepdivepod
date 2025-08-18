@@ -57,17 +57,17 @@ article p {
     align-items: center;
     gap: 6px;
     font-size: 17px;
-    transition: transform 0.2s ease, color 0.2s ease;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .links-row a img {
     width: 30px;
     height: 30px;
-    transition: transform 0.2s ease;
+    transition: transform 0.3s ease;
 }
 
 .links-row a:hover {
-    transform: scale(1.05);
+    transform: scale(1.04);
     color: #FFFFFF;
 }
 
