@@ -12,7 +12,7 @@ article {
 
 article h1 {
     font-size: 36px;
-    margin: 100px 0px 20px 0px;
+    margin: 120px 0px 30px 0px;
     font-weight: 700;
     color: #FFFFFF;
     position: relative;
@@ -61,6 +61,7 @@ article p {
     gap: 6px;
     font-size: 17px;
     transition: transform 0.3s ease, color 0.3s ease;
+    margin: 0px 0px 30px 0px;
 }
 
 .links-row a img {
