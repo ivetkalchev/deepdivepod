@@ -1,24 +1,48 @@
 body {
-    background: linear-gradient(#011623, #55757B);
+    background: linear-gradient(135deg, #011623, #55757B);
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-/* Article container */
+/* Article container with neon/glow effect */
 article {
     max-width: 900px;
-    margin: 40px auto;
-    padding: 30px;
-    background: #0F2632; /* Dark blue background */
+    margin: 50px auto;
+    padding: 35px;
+    background: #0F2632;
     border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3), 0 0 15px #FFD70020;
     color: #ffffff;
-    font-family: 'Helvetica', sans-serif;
     line-height: 1.6;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover effect with gradient glow */
+article::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(60deg, #FFD700, #00FFFF, #FF69B4);
+    opacity: 0.1;
+    transform: rotate(0deg);
+    transition: transform 1s linear;
+    z-index: 0;
+}
+
+article:hover::before {
+    transform: rotate(360deg);
+    opacity: 0.2;
 }
 
 article:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), 0 0 25px #FFD70040;
 }
 
 /* Episode number */
@@ -26,66 +50,108 @@ article h3 {
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 10px;
-    color: #FFD700; /* gold accent */
+    color: #FFD700;
     text-transform: uppercase;
     letter-spacing: 1px;
+    text-shadow: 0 0 8px #FFD70055;
+    position: relative;
+    z-index: 1;
 }
 
-/* Episode title */
+/* Episode title with gradient text */
 article h1 {
     font-size: 36px;
     margin-bottom: 20px;
     font-weight: 700;
+    background: linear-gradient(90deg, #FFD700, #00FFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    position: relative;
+    z-index: 1;
 }
 
-/* Tags */
-article .tags {
-    margin-bottom: 20px;
-}
-
+/* Tags with hover glow */
 article .tags h2 {
     display: inline-block;
     background: #1B3A47;
-    padding: 5px 15px;
+    padding: 6px 18px;
     margin: 5px 5px 5px 0;
     border-radius: 50px;
     font-size: 14px;
     color: #FFD700;
     font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+article .tags h2:hover {
+    color: #ffffff;
+    background: linear-gradient(90deg, #FFD700, #00FFFF);
+    box-shadow: 0 0 10px #FFD700, 0 0 15px #00FFFF;
 }
 
 /* Spotify iframe */
 article iframe {
-    border-radius: 15px;
-    margin-bottom: 20px;
+    border-radius: 20px;
+    margin-bottom: 25px;
     border: none;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Description */
+article iframe:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Description with subtle glow */
 article p {
     font-size: 18px;
     margin-bottom: 30px;
     color: #e0e0e0;
+    text-shadow: 0 0 5px #ffffff10;
 }
 
-/* Links */
-article ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-article ul li {
-    margin-bottom: 10px;
-}
-
+/* Links with neon hover effect */
 article ul li a {
     color: #FFD700;
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+article ul li a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: #FFD700;
+    transition: width 0.3s;
+    width: 0;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
 }
 
 article ul li a:hover {
     color: #ffffff;
-    text-decoration: underline;
+}
+
+article ul li a:hover::after {
+    width: 100%;
+}
+
+/* Smooth fade-in animation for articles */
+article {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
