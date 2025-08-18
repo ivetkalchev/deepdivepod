@@ -56,16 +56,19 @@ body {
 }
 
 .episode-card h3 {
-    margin: 15px 0px 10px 0px;
+    margin: 15px 0px 5px 10px;
     font-size: 15px;
     font-weight: 300;
     color: #ffffff;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
 
 .episode-card h2 {
-    font-size: 20px;
+    margin: 0px 0px 0px 10px;
+    font-size: 18px;
     color: #ffffff;
     font-weight: 600;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
 
 .episode-card a {
