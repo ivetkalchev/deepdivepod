@@ -14,7 +14,8 @@ article h3 {
     font-weight: 300;
     color: #CCCCCC;
     text-align: center;
-    margin: 40px 0px 20px 0px;
+    margin: 0px auto;
+    padding: 20px;
 }
 
 article h1 {
@@ -25,6 +26,7 @@ article h1 {
     position: relative;
     z-index: 1;
     text-align: center;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 article .tags {
@@ -56,14 +58,16 @@ article p {
 .links-row a {
     color: #CCCCCC;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
     gap: 8px; /* space between image and text */
+    font-size: 20px;
+
 }
 
 .links-row a img {
-    width: 16px; /* adjust as needed */
-    height: 16px; /* adjust as needed */
+    width: 20px; /* adjust as needed */
+    height: 20px; /* adjust as needed */
 }
