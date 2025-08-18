@@ -123,6 +123,11 @@ body {
         gap: 30px;
         max-width: 85%;
     }
+
+    #search-bar {
+        width: 80%;
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -147,7 +152,7 @@ body {
 
     #search-bar {
         width: 80%;
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .search-heading .line1 {
@@ -156,5 +161,6 @@ body {
 
     .search-heading .line2 {
     font-size: 25px;
+    padding-top: 20px;
     }
 }
