@@ -11,16 +11,18 @@ css: episodes-styles.css
     </div>
 
     <!-- search bar-->
-
+     
 </section>
 
 <div class="episodes-list">
     {% assign sorted_episodes = site.episodes | sort: "episode_number" | reverse %}
     {% for episode in sorted_episodes %}
         <article class="episode-card">
-            <img src="{{ episode.cover }}" alt="{{ episode.title }}" class="episode-cover">
-            <h3>Episode {{ episode.episode_number }}</h3>
-            <h2><a href="{{ episode.url }}">{{ episode.title }}</a></h2>
+            <a href="{{ episode.url }}">
+                <img src="{{ episode.cover }}" alt="{{ episode.title }}" class="episode-cover">
+                <h3>Episode {{ episode.episode_number }}</h3>
+                <h2><a href="{{ episode.url }}">{{ episode.title }}</h2>
+            </a>
         </article>
     {% endfor %}
 </div>
