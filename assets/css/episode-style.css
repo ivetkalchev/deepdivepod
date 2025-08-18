@@ -1,3 +1,91 @@
 body {
     background: linear-gradient(#011623, #55757B);
 }
+
+/* Article container */
+article {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #0F2632; /* Dark blue background */
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    font-family: 'Helvetica', sans-serif;
+    line-height: 1.6;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Episode number */
+article h3 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #FFD700; /* gold accent */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Episode title */
+article h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* Tags */
+article .tags {
+    margin-bottom: 20px;
+}
+
+article .tags h2 {
+    display: inline-block;
+    background: #1B3A47;
+    padding: 5px 15px;
+    margin: 5px 5px 5px 0;
+    border-radius: 50px;
+    font-size: 14px;
+    color: #FFD700;
+    font-weight: 500;
+}
+
+/* Spotify iframe */
+article iframe {
+    border-radius: 15px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+/* Description */
+article p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #e0e0e0;
+}
+
+/* Links */
+article ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+article ul li {
+    margin-bottom: 10px;
+}
+
+article ul li a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+article ul li a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
