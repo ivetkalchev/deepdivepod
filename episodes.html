@@ -9,9 +9,9 @@ css: episodes-styles.css
 <div class="episodes-list">
     {% for episode in site.episodes %}
         <article class="episode-card">
-            <h3>"{{ episode.episode_number }}"</h3>
-            <h2><a href="{{ episode.url }}">{{ episode.title }}</a></h2>
             <img src="{{ episode.cover }}" alt="{{ episode.title }}" class="episode-cover">
+            <h3>Episode {{ episode.episode_number }}</h3>
+            <h2><a href="{{ episode.url }}">{{ episode.title }}</a></h2>
         </article>
     {% endfor %}
 </div>
