@@ -11,7 +11,7 @@ body {
     margin-top: 80px;
     width: 100%;
     box-sizing: border-box;
-    flex: 1; /* makes main section expand and pushes footer down */
+    flex: 1;
 }
 
 .search-heading .line1 {
@@ -117,9 +117,6 @@ body {
     color: #605E5E;
 }
 
-/* --- Responsive Fixes --- */
-
-/* Tablets */
 @media (max-width: 1024px) {
     .episodes-list {
         grid-template-columns: repeat(2, 1fr);
@@ -128,12 +125,11 @@ body {
     }
 }
 
-/* Mobile */
 @media (max-width: 600px) {
     .episodes-list {
-        grid-template-columns: repeat(2, 1fr); /* keep 2 per row */
+        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
-        max-width: 85%;
+        max-width: 90%;
     }
 
     .episode-card h2 {
@@ -150,6 +146,15 @@ body {
     }
 
     #search-bar {
-        width: 85%;
+        width: 80%;
+        font-size: 12px;
+    }
+
+    .search-heading .line1 {
+    font-size: 15px;
+    }
+
+    .search-heading .line2 {
+    font-size: 25px;
     }
 }
