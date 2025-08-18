@@ -14,8 +14,7 @@ article h3 {
     font-weight: 300;
     color: #CCCCCC;
     text-align: center;
-    margin: 0px auto;
-    padding: 20px;
+    margin: 30px 0px 10px 0px;
 }
 
 article h1 {
@@ -33,7 +32,7 @@ article .tags {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 2px;
+    gap: 3px;
     padding: 6px 18px;
     margin: 15px 0;
     border-radius: 50px;
@@ -44,10 +43,11 @@ article .tags {
 }
 
 article p {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 30px;
     color: #E6E6E6;
     text-align: justify;
+    font-weight: 400;
 }
 
 .links-row {
@@ -66,18 +66,21 @@ article p {
     align-items: center;
     gap: 6px;
     font-size: 17px;
+    transition: transform 0.2s ease, color 0.2s ease;
 
 }
 
 .links-row a img {
     width: 30px;
     height: 30px;
+    transition: transform 0.2s ease;
 }
 
 .links-row a:hover {
     transform: scale(1.05);
+    color: #FFFFFF;
 }
 
 .links-row a:hover img {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
