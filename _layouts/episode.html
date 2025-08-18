@@ -7,11 +7,18 @@ css: episode-style.css
 <article>
   <h3>Episode {{ page.episode_number }}</h3>
   <h1>{{ page.title }}</h1>
-  {% for tag in page.tags %}
-    <h2>{{ page.tag }}</h2>
-  {% endfor %}
+
+  {% if page.tags %}
+    <div class="tags">
+      {% for tag in page.tags %}
+        <h2>{{ tag.tag }}</h2>
+      {% endfor %}
+    </div>
+  {% endif %}
+
   <iframe src="{{ page.spotify }}" width="100%" height="152"></iframe>
   <p>{{ page.description }}</p>
+
   <ul>
     {% for link in page.links %}
       <li><a href="{{ link.url }}" target="_blank">{{ link.label }}</a></li>
