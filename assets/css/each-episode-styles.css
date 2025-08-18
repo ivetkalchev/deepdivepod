@@ -79,16 +79,22 @@ article p {
 
 @media (max-width: 1024px) {
     article h1 {
-        font-size: 40px;
-        margin: 100px 0px 40px 0px;
+        font-size: 50px;
+        margin: 140px 0px 30px 0px;
+    }
+
+    article .tags {
+        font-size: 30px;
+        gap: 4px;
+        margin: 0px 0px 25px 0px;
     }
 
     article p {
-        font-size: 18px;
+        font-size: 25px;
     }
 
     .links-row a {
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .links-row a img {
@@ -111,7 +117,7 @@ article p {
     article .tags {
         font-size: 20px;
         gap: 4px;
-        margin: 10px 0px 20px 0px;
+        margin: 10px 0px 25px 0px;
     }
 
     article p {
