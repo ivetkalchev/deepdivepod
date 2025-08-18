@@ -12,6 +12,7 @@
   <div class="container">
     <header>
       <nav>
+        <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
         <ul class="navbar">
           <li><a href="{{ '/' | relative_url }}">Home</a></li>
           <li><a href="{{ '/episodes' | relative_url }}">Episodes</a></li>
@@ -29,4 +30,14 @@
     </footer>
   </div>
 </body>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navbar = document.querySelector(".navbar");
+
+    menuToggle.addEventListener("click", () => {
+      navbar.classList.toggle("active");
+    });
+  });
+</script>
 </html>
