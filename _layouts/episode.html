@@ -16,11 +16,12 @@ css: each-episode-styles.css
         {% else %}
           <span class="tag">{{ tag }}</span>
         {% endif %}
+        {% unless forloop.last %} | {% endunless %}
       {% endfor %}
     </div>
   {% endif %}
 
-  <iframe src="{{ page.spotify }}" width="90%" height="152" frameborder="0" allow="encrypted-media"></iframe>
+  <iframe src="{{ page.spotify }}" width="100%" height="152" frameborder="0" allow="encrypted-media"></iframe>
   <p>{{ page.description }}</p>
 
   <ul>
