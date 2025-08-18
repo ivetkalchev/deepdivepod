@@ -12,7 +12,7 @@ article {
 
 article h1 {
     font-size: 36px;
-    margin: 80px 0px 20px 0px;
+    margin: 100px 0px 20px 0px;
     font-weight: 700;
     color: #FFFFFF;
     position: relative;
@@ -33,11 +33,12 @@ article .tags {
     color: #CCCCCC;
     font-weight: 300;
     cursor: default;
+    margin: 0px 0px 30px 0px;
 }
 
 article p {
     font-size: 18px;
-    margin-bottom: 30px;
+    margin: 20px 0px 30px 0px;
     color: #E6E6E6;
     text-align: justify;
     font-weight: 300;
