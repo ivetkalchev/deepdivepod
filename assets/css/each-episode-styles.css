@@ -32,19 +32,19 @@ article h1 {
 article .tags {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* optional, if tags should wrap to next line */
-    gap: 10px; /* space between tags */
+    flex-wrap: wrap;
+    gap: 2px;
     padding: 6px 18px;
     margin: 15px 0;
     border-radius: 50px;
-    font-size: 14px;
+    font-size: 16px;
     color: #CCCCCC;
     font-weight: 300;
     cursor: default;
 }
 
 article p {
-    font-size: 15px;
+    font-size: 20px;
     margin-bottom: 30px;
     color: #E6E6E6;
     text-align: justify;
@@ -52,9 +52,9 @@ article p {
 
 .links-row {
     display: flex;
-    gap: 20px; /* space between links */
-    flex-wrap: wrap; /* optional, allows wrapping on small screens */
-    justify-content: center; /* optional, center the row */
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .links-row a {
@@ -64,12 +64,20 @@ article p {
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
-    gap: 8px; /* space between image and text */
-    font-size: 20px;
+    gap: 6px;
+    font-size: 17px;
 
 }
 
 .links-row a img {
-    width: 20px; /* adjust as needed */
-    height: 20px; /* adjust as needed */
+    width: 30px;
+    height: 30px;
+}
+
+.links-row a:hover {
+    transform: scale(1.05);
+}
+
+.links-row a:hover img {
+    transform: scale(1.2);
 }
