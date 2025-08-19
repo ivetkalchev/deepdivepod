@@ -1,5 +1,6 @@
 body {
     background: linear-gradient(#011623, #55757B);
+    background-attachment: fixed;
 }
 
 .search-section {
