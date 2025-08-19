@@ -49,8 +49,7 @@ body {
     justify-content: center;
 }
 
-.icon-container a,
-.icon-container .rss {
+.icon-container a {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,8 +63,7 @@ body {
     transition: transform 0.3s;
 }
 
-.icon-container a:hover,
-.icon-container .rss:hover {
+.icon-container a:hover {
     transform: scale(1.05);
 }
 
@@ -111,8 +109,7 @@ body {
         border-radius: 40px;
     }
 
-    .icon-container a,
-    .icon-container .rss {
+    .icon-container a {
         font-size: 13px;
     }
 
