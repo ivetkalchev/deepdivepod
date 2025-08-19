@@ -59,17 +59,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  showInitialEpisodes();
-
-  loadMoreBtn.addEventListener("click", () => {
-    visibleCount += 6;
-    showInitialEpisodes();
-  });
-
-  searchBar.addEventListener("input", function () {
-    const query = this.value.toLowerCase().trim();
+  function filterEpisodes(query) {
     let matchCount = 0;
-
     episodes.forEach(ep => {
       const title = ep.dataset.title;
       const tags = ep.dataset.tags;
@@ -90,6 +81,24 @@ document.addEventListener("DOMContentLoaded", function () {
       visibleCount = 6;
       showInitialEpisodes();
     }
+  }
+
+  showInitialEpisodes();
+
+  loadMoreBtn.addEventListener("click", () => {
+    visibleCount += 6;
+    showInitialEpisodes();
   });
+
+  searchBar.addEventListener("input", function () {
+    filterEpisodes(this.value.toLowerCase().trim());
+  });
+
+  const urlParams = new URLSearchParams(window.location.search);
+  const tagParam = urlParams.get("tag");
+  if (tagParam) {
+    searchBar.value = tagParam;
+    filterEpisodes(tagParam.toLowerCase().trim());
+  }
 });
 </script>

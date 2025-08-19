@@ -11,9 +11,9 @@ css: each-episode-styles.css
     <div class="tags">
       {% for tag in page.tags %}
         {% if tag.tag %}
-          <span class="tag">{{ tag.tag }}</span>
+          <a class="tag" href="{{ '/episodes' | relative_url }}?tag={{ tag.tag | url_encode }}">{{ tag.tag }}</a>
         {% else %}
-          <span class="tag">{{ tag }}</span>
+          <a class="tag" href="{{ '/episodes' | relative_url }}?tag={{ tag | url_encode }}">{{ tag }}</a>
         {% endif %}
         {% unless forloop.last %} | {% endunless %}
       {% endfor %}
