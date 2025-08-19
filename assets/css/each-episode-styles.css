@@ -165,13 +165,4 @@ article p {
         margin: 10px auto;
         display: block; 
     }
-
-    .youtube-embed {
-        margin: 30px auto;
-    }
-
-    .youtube-embed iframe {
-        width: 90%;
-        height: 90%;
-    }
 }
