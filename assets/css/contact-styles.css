@@ -77,7 +77,7 @@ body {
 
 .intro-box {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto 60px auto;
     padding: 20px 20px 30px 20px;
     font-weight: 300;
     font-size: 20px;
