@@ -22,18 +22,18 @@ article h1 {
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-.tags {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 6px;
-    padding: 6px 12px;
-    margin: 0 0 30px 0;
-    border-radius: 50px;
-    font-size: 16px;
-    color: #CCCCCC;
-    font-weight: 300;
-    cursor: default;
+.tags .tag {
+    padding: 4px 10px;
+    border-radius: 20px;
+    background: #2a2a2a;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+
+.tags .tag:hover {
+    background: #444;
 }
 
 article p {
