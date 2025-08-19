@@ -15,7 +15,6 @@ css: each-episode-styles.css
         {% else %}
           <a class="tag" href="{{ '/episodes' | relative_url }}?tag={{ tag | url_encode }}">{{ tag }}</a>
         {% endif %}
-        {% unless forloop.last %} | {% endunless %}
       {% endfor %}
     </div>
   {% endif %}
