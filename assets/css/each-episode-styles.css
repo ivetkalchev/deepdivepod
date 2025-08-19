@@ -28,10 +28,12 @@ article h1 {
     font-weight: 300;
     font-size: 20px;
     transition: transform 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+    text-align: center;
 }
 
 .tags .tag:hover {
-    background: #FFFFFF;
+    color: #FFFFFF;
     transform: scale(1.02);
 }
 
