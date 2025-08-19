@@ -13,19 +13,14 @@ body {
 }
 
 .error-container h1 {
-  font-size: 40px;
-  margin: 0;
+  font-size: 50px;
+  margin: 10px 0px 0px 0px;
   color: #ffffff;
 }
 
 .error-container p {
-  font-size: 20px;
+  font-size: 25px;
   margin: 10px 0px;
-  color: #ffffff
-}
-
-.error-container a {
-  text-decoration: none;
-  padding: 20px 30px;
-  color: white;
+  color: #ffffff;
+  font-weight: 300;
 }
