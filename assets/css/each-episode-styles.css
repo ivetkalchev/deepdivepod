@@ -79,6 +79,13 @@ article p {
     transform: scale(1.06);
 }
 
+.youtube-embed {
+    width: 853px;
+    height: 505px;
+    margin: 20px auto;
+    display: block;
+}
+
 @media (max-width: 1024px) {
     article h1 {
         font-size: 50px;

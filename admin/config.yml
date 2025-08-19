@@ -20,7 +20,7 @@ collections:
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Cover Image", name: "cover", widget: "image" }
       - { label: "Spotify Embed Link", name: "spotify", widget: "string", hint: "Paste the Spotify embed track URL (no ifrmae)" }
-      - { label: "YouTube Link (optional)", name: "youtube", widget: "string", required: false, hint: "Paste the YouTube embed video URL (no ifrmae)" }
+      - { label: "YouTube Link", name: "youtube", widget: "string", required: false, hint: "Paste the YouTube embed video URL (no ifrmae)" }
       - label: "Tags"
         name: "tags"
         widget: "list"
