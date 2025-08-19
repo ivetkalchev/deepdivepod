@@ -23,6 +23,17 @@ css: each-episode-styles.css
   <iframe src="{{ page.spotify }}" width="100%" height="152" frameborder="0" allow="encrypted-media"></iframe>
   <p>{{ page.description }}</p>
 
+  {% if page.youtube %}
+    <div class="youtube-embed">
+      <iframe width="560" height="315"
+        src="{{ page.youtube }}"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  {% endif %}
+
   <div class="links-row">
     {% for link in page.links %}
       <a href="{{ link.url }}" target="_blank">
