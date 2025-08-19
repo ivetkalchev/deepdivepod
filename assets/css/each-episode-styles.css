@@ -80,10 +80,19 @@ article p {
 }
 
 .youtube-embed {
-    width: 100%;
-    height: 100%;
-    margin: 20px auto;
-    display: block;
+  max-width: 900px;   /* limit max size so it doesn’t get too huge on wide screens */
+  margin: 30px auto;  /* center horizontally */
+  position: relative;
+  padding-bottom: 56.25%; /* keeps 16:9 aspect ratio */
+  height: 0;
+}
+
+.youtube-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 @media (max-width: 1024px) {
