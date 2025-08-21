@@ -3,10 +3,9 @@
     height: 90vh;
     width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px 0px 0px 0px;
     box-sizing: border-box;
 }
 
@@ -15,6 +14,26 @@
     padding-top: 180px;
     text-align: left;
     margin-left: -300px;
+}
+
+.hero-welcome {
+    font-size: 30px;
+    color: #cccccc;
+    font-weight: 300;
+}
+
+.hero-title {
+    font-size: 49px;
+    font-weight: bold;
+    margin: -30px 0px -15px 0px;
+    text-shadow: 2px 2px 4px #0000003a;
+}
+
+.hero-subtitle {
+    font-size: 21px;
+    color: #cccccc;
+    line-height: 1.35;
+    font-weight: 300;
 }
 
 .scroll-section {
