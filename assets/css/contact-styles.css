@@ -40,10 +40,10 @@ body {
 .icon-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 40px;
     background-color: #f0f0f0;
     border-radius: 80px;
-    padding: 15px 60px;
+    padding: 20px 70px;
     box-shadow: 2px 2px 4px #0000003a;
     align-items: center;
     justify-content: center;
@@ -64,9 +64,8 @@ body {
 }
 
 .icon-container .logo {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 5px;
+    width: 60px;
+    height: 60px;
     object-fit: contain;
 }
 
@@ -96,17 +95,17 @@ body {
 
     .intro-box {
         font-size: 17px;
-        padding: 30px;
+        padding: 15px 30px 15px 30px;
     }
 
     .icon-container {
         gap: 25px;
-        padding: 10px 20px;
+        padding: 12px 35px;
         border-radius: 40px;
     }
 
     .icon-container .logo {
-        width: 30px;
-        height: 30px;
+        width: 45px;
+        height: 45px;
     }
 }
