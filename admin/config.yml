@@ -1,7 +1,7 @@
 backend:
   name: github
   branch: main
-  repo: ivetkalchev/deepdivepod
+  repo: ivetkalchev/deepdivepod # change to your "username/repo name"
 
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
