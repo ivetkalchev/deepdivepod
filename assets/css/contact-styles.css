@@ -49,24 +49,6 @@ body {
     justify-content: center;
 }
 
-.icon-container a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-    color: #274069;
-    font-weight: 600;
-    font-size: 15px;
-    cursor: pointer;
-    user-select: none;
-    text-align: center;
-    transition: transform 0.3s;
-}
-
-.icon-container a:hover {
-    transform: scale(1.05);
-}
-
 .icon-container .logo {
     width: 50px;
     height: 50px;
@@ -107,10 +89,6 @@ body {
         gap: 25px;
         padding: 10px 20px;
         border-radius: 40px;
-    }
-
-    .icon-container a {
-        font-size: 13px;
     }
 
     .icon-container .logo {
