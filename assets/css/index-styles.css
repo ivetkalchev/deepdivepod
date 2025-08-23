@@ -3,11 +3,10 @@
     height: 90vh;
     width: 100%;
     display: flex;
-    align-items: flex-start; /* center */
-    justify-content: center; /* space-between */
+    align-items: flex-start;
+    justify-content: center;
     padding: 20px 0px 0px 0px;
     box-sizing: border-box;
-    flex-direction: column;
 }
 
 .hero-text {
@@ -39,7 +38,7 @@
 
 .scroll-section {
     position: absolute;
-    bottom: 20px; /* as low as possible */
+    bottom: 150px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -160,6 +159,6 @@
     }
 
     .scroll-section {
-        margin: 50px 0px 10px 80px;
+        bottom: 130px;
     }
 }
